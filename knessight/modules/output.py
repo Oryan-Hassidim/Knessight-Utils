@@ -93,7 +93,7 @@ class OutputManager:
                 "id": person_id,
                 "knessetSiteId": person_id,
                 "name": metadata["name"],
-                "imageUrl": "",  # Populated later
+                "imageUrl": "",  # TODO: get it fromn mks.csv, the images there...
                 "description": f"Faction: {metadata.get('faction', 'N/A')}, Party: {metadata.get('party_name', 'N/A')}",
                 "Topics": [],
             }
@@ -143,6 +143,7 @@ class OutputManager:
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
+    # TODO: delete this, we dont need it.
     def generate_mks_csv(self, person_ids: List[int]):
         """Generate mks.csv from database.
 

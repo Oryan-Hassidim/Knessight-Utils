@@ -298,7 +298,7 @@ Respond with JSON only, format:
                     if not metadata:
                         continue
 
-                    # Load speech text from intermediate file
+                    # Load speech text from intermediate file # TODO: optimize by caching CSV contents per person_id/topic
                     csv_path = (
                         self.intermediate_dir / f"{person_id}_{topic}_filtered.csv"
                     )

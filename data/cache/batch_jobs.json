@@ -9,5 +9,15 @@
     "request_count": 52,
     "file_id": "file-CNyhTW11rusLPM76MtR13M",
     "completed_at": "2026-02-15T22:17:20.874127"
+  },
+  "batch_69922e23952081908d45a03d8a1511c4": {
+    "phase": "score",
+    "person_id": "30850",
+    "topic": "התיישבות",
+    "batch_index": "0",
+    "submitted_at": "2026-02-15T22:35:52.135707",
+    "status": "in_progress",
+    "request_count": 17,
+    "file_id": "file-2rkQbJ5rjK69vMR4vjzhfW"
   }
 }

@@ -1,11 +1,14 @@
 {
   "30850_התיישבות": {
-    "status": "filter_complete",
+    "status": "score_complete",
     "filter_batch_job_ids": [
       "batch_6992292cd83881908d067ec9c2eae1aa"
     ],
     "filter_completed_at": "2026-02-15T22:22:05.577892",
-    "score_batch_job_ids": []
+    "score_batch_job_ids": [
+      "batch_69922e23952081908d45a03d8a1511c4"
+    ],
+    "score_completed_at": "2026-02-15T22:41:54.508942"
   },
   "30850_נישואים_אזרחיים": {
     "status": "filter_complete",

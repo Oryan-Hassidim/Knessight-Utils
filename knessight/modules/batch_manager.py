@@ -275,11 +275,8 @@ class BatchManager:
         content = file_response.read().decode("utf-8")
 
         # Parse JSONL
-        results = []
-        for line in content.strip().split("\n"):
-            if line:
-                results.append(json.loads(line))
-        # TODOL: list comprehension
+        results = [json.loads(line) for line in content.strip().split("\n") if line]
+
         return results
 
     def retry_failed_requests(
