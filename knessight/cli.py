@@ -239,7 +239,7 @@ def both(
 
     # Run score
     console.print("[bold]Step 2: Score Pipeline[/bold]")
-    score(reasoning_rate, force_reprocess)
+    score(db_path, reasoning_rate, force_reprocess)
 
     console.print("\n[bold green]✓ Full pipeline complete![/bold green]")
 

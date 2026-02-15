@@ -24,6 +24,18 @@
                 "--force-reprocess"
             ],
             "preLaunchTask": "uv sync"
+        },
+        {
+            "name": "Python Debugger: both",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "both",
+                "--force-reprocess"
+            ],
+            "preLaunchTask": "uv sync"
         }
     ]
 }

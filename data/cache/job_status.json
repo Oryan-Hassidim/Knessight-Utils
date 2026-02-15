@@ -25,5 +25,14 @@
     ],
     "filter_completed_at": "2026-02-15T22:22:04.804981",
     "score_batch_job_ids": []
+  },
+  "30055_התיישבות": {
+    "status": "pending"
+  },
+  "30055_נישואים_אזרחיים": {
+    "status": "pending"
+  },
+  "30055_תחבורה_ציבורית_בשבת": {
+    "status": "pending"
   }
 }

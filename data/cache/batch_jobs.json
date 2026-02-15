@@ -19,5 +19,25 @@
     "status": "in_progress",
     "request_count": 17,
     "file_id": "file-2rkQbJ5rjK69vMR4vjzhfW"
+  },
+  "batch_6992359aea208190a60597f99aa7dcfb": {
+    "phase": "filter",
+    "person_id": "30055",
+    "topics": "נישואים_אזרחיים,תחבורה_ציבורית_בשבת,התיישבות",
+    "batch_index": "0",
+    "submitted_at": "2026-02-15T23:07:43.299874",
+    "status": "validating",
+    "request_count": 9672,
+    "file_id": "file-CwHrBcZ2AvKL5jaHNXsggP"
+  },
+  "batch_699235f01f4881909fd75342d0a14284": {
+    "phase": "filter",
+    "person_id": "30055",
+    "topics": "התיישבות,נישואים_אזרחיים,תחבורה_ציבורית_בשבת",
+    "batch_index": "0",
+    "submitted_at": "2026-02-15T23:09:08.361179",
+    "status": "validating",
+    "request_count": 9672,
+    "file_id": "file-BUfTJLP4Pts6pzpjHaA97D"
   }
 }
