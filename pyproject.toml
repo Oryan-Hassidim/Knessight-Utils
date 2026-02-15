@@ -1,0 +1,29 @@
+[project]
+name = "knessight"
+version = "0.1.0"
+description = "Knesset Speech Analysis Pipeline - AI-powered stance detection and relevance scoring"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fuzzywuzzy>=0.18.0",
+    "openai>=2.21.0",
+    "python-dotenv>=1.0.0",
+    "python-levenshtein>=0.27.3",
+    "pyyaml>=6.0.3",
+    "rich>=14.3.2",
+    "typer>=0.23.1",
+]
+
+[project.scripts]
+knessight = "knessight.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["knessight*"]
+exclude = ["data*", "logs*", "cache*", "plan*", "tests*"]
+
+[tool.uv]
+package = true
+
+[tool.uv.sources]

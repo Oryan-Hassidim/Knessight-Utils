@@ -1,0 +1,137 @@
+נשמח להערות והארות לייעול.
+נספח 1 – סכמת בסיס הנתונים הגולמיים
+CREATE TABLE "knesset_speeches" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_knesset_speeches" PRIMARY KEY,
+    "text" TEXT NULL,
+    "uuid" TEXT NOT NULL,
+    "knesset" INTEGER NOT NULL,
+    "session_number" INTEGER NULL,
+    "date" TEXT NOT NULL,
+    "person_id" INTEGER NULL,
+    "name_id" INTEGER NULL,
+    "chair" INTEGER NOT NULL,
+    "topic_id" INTEGER NULL,
+    "topic_extra_id" INTEGER NULL,
+    "qa" INTEGER NULL,
+    "query" TEXT NULL,
+    "only_read" INTEGER NULL,
+    CONSTRAINT "FK_knesset_speeches_names_name_id" FOREIGN KEY ("name_id") REFERENCES "names" ("id"),
+    CONSTRAINT "FK_knesset_speeches_topic_extras_topic_extra_id" FOREIGN KEY ("topic_extra_id") REFERENCES "topic_extras" ("id"),
+    CONSTRAINT "FK_knesset_speeches_topics_topic_id" FOREIGN KEY ("topic_id") REFERENCES "topics" ("id")
+)
+CREATE TABLE "names" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_names" PRIMARY KEY AUTOINCREMENT,
+    "name" TEXT NULL
+)
+CREATE TABLE "people" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_people" PRIMARY KEY,
+    "person_id" INTEGER NULL,
+    "start_date" TEXT NULL,
+    "end_date" TEXT NULL,
+    "knesset" INTEGER NULL,
+    "first_name" TEXT NOT NULL,
+    "surname" TEXT NOT NULL,
+    "gender" INTEGER NOT NULL,
+    "faction_id" INTEGER NULL,
+    "faction" TEXT NULL,
+    "party_name" TEXT NULL,
+    "dob" TEXT NULL,
+    "cob" TEXT NULL,
+    "yod" INTEGER NULL,
+    "yoi" INTEGER NULL,
+    "city" TEXT NULL,
+    "languages" TEXT NULL
+)
+CREATE TABLE sqlite_sequence(name,seq)
+CREATE TABLE "topic_extras" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_topic_extras" PRIMARY KEY AUTOINCREMENT,
+    "topic_extra" TEXT NULL
+)
+CREATE TABLE "topics" (
+    "id" INTEGER NOT NULL CONSTRAINT "PK_topics" PRIMARY KEY AUTOINCREMENT,
+    "topic" TEXT NULL
+)
+CREATE VIEW knesset_speeches_view AS
+SELECT
+	k.id,
+	n.name,
+	k.text,
+	k.knesset,
+	k.session_number,
+	k.date,
+	t.topic,
+	te.topic_extra,
+	k.person_id,
+	k.name_id,
+	k.chair,
+	k.topic_id,
+	k.topic_extra_id,
+	k.qa,
+	k.query,
+	k.only_read,
+	k.uuid
+FROM knesset_speeches AS k
+LEFT JOIN topics AS t ON k.topic_id = t.id
+LEFT JOIN topic_extras AS te ON k.topic_extra_id = te.id
+LEFT JOIN names AS n ON k.name_id = n.id
+
+נספח 2 – סכמת בסיס הנתונים המעובדים
+מבנה תיקיית client data
+התיקייה client_data:
+│   mks.csv
+│
+┤───mk_data
+│   │
+│   ┤───482
+│   │       main.json
+│   │       התיישבות.csv
+│   │       נישואים_אזרחיים.csv
+│   │
+│   ┘───528
+│           main.json
+│           התיישבות.csv
+│           נישואים_אזרחיים.csv
+│
+┘───topics
+        התיישבות.json
+        נישואים_אזרחיים.json
+
+mks.csv:
+id,first name,last name,knesset site id,image url
+2312,חיים,הרצוג,391,https://fs.knesset.gov.il/globaldocs/MK/391/1_391_3_914.jpeg
+2652,יצחק,שמיר,175,https://fs.knesset.gov.il/globaldocs/MK/175/1_175_3_440.jpeg
+2595,יצחק,רבין,168,https://fs.knesset.gov.il/globaldocs/MK/168/1_168_3_426.jpeg
+458,חיים,רמון,115,https://fs.knesset.gov.il/globaldocs/MK/115/1_115_3_317.jpeg
+התיישבות.json:
+
+{
+    "2312": [100, 2.134109018],
+    "2652": [200, 7.371783141],
+    "2595": [300, 8.197950571],
+}
+כאשר המפתח הוא המזהה של הח"כ והערך הוא מספר הפעמים שהח"כ דיבר על זה, וממוצע דעתו בנושא.
+mk_data/482/main.json:
+{
+    "id": 482,
+    "knessetSiteId": 125,
+    "name": "אריאל שרון",
+    "imageUrl": "https://fs.knesset.gov.il/globaldocs/MK/125/1_125_3_342.jpeg",
+    "description": "בכנסת התשיעית: שר החקלאות\nבכנסת העשירית: שר החקלאות, שר הביטחון,שר ראש הממשלה, שר ראש הממשלה\n",
+    "Topics": [
+        {
+            "topicName": "התיישבות",
+            "count": 100,
+            "average": 7.59
+        },
+        {
+            "topicName": "נישואים אזרחיים",
+            "count": 200,
+            "average": 6.0
+        }
+    ]
+}
+mk_data/482/התיישבות.csv:
+Id,Date,Topic,Text,Rank
+264224,1992-07-13,כינון הממשלה והרכבה,"הממשלה שמר רבין מציג היום בפנינו שונה במרכיביה, ביעדיה, ובעיקר בכיוונה המצטייר מכל ממשלה קודמת, ובוודאי מכל אלה שעד היום מר רבין עמד בראשן או השתתף בהן, והשינוי כולו לרעה, כולו מעורר חששות כבדים, כולו רק לשלילה. כיהודי לאומי, נאמנותי מסורה בראש ובראשונה לעם היהודי ולאינטרסים החיוניים שלו, ורק בכפוף לכך, ובשורה שנייה, למסגרת המפלגתית. לכן גם, בשם מפלגתי, אינני מהסס כלל לומר למר רבין מעל במה זו, כי אם יפריך את החששות החמורים שממשלתו מולידה כמעט בלב כל יהודי, ואם יוכיח כי גם בהרכב זה הוא מקדם ומשרת את ענייניו של העם היהודי ומבצר את יהודיותה של מדינת ישראל - הוא יגלה כי הליכוד איננו אופוזיציה מופקרת, כפי שהיתה מפלגתו ב-15 השנים האחרונות, אלא אופוזיציה אחראית. אבל, אוי למר רבין מאתנו ואוי לממשלה אם מדיניותו ומעשיו, וקודם כול בתחומי הביטחון הלאומי - המשא-ומתן עם ערביי ארץ-ישראל, ההתיישבות היהודית בכל רחבי ארץ-ישראל המערבית, שחייבת להימשך, והמפה החדשה - זהו המהפך האמיתי שהביאו ממשלות הליכוד. זה דבר שאין איש יכול לשנותו עוד, אבל יש להמשיך בחיזוק המפה - - ",10
+264228,1992-07-13,כינון הממשלה והרכבה,"- - להמשיך ביישום ציוויי מגילת העצמאות, פעולות החקיקה, קידום העלייה ובכל הנושאים האחרים העומדים על הפרק ועוד יעלו על הפרק - אוי להם אם יתברר שבכל אלה יאשר מר רבין את חששותינו. לא נרשה כי במסווה של הבטחת שלום ושפע כלכלי יניח מר רבין יסודות למדינה ערבית שנייה בתוך שטח ארץ-ישראל, בצד מדינת ירדן, שהיא המדינה הפלשתינית, ונוסף עליה. לא נשלים, וניאבק בכל כוחנו בכל מעשה ובכל מדיניות של ממשלת רבין שתדחף את מדינת ישראל אל הדרך להתפתחותה, כלומר להתנוונותה, כמדינה דו-לאומית, ברוח חזון העיוועים של השמאלנות הישראלית. אני מנסה להאמין, שבכל זאת רוח הציונות האמיתית תגבר, ואם כך יהיה, ורק אחרי שנראה שכך יהיה - בינתיים האמון שלנו לא יהיה בממשלה הזאת - נוכל לברך את ראש הממשלה להצלחה במשימתו הכבדה. תודה רבה. ",10
+659957,1992-07-13,כינון הממשלה והרכבה,"הממשלה שמר רבין מציג היום בפנינו שונה במרכיביה, ביעדיה, ובעיקר בכיוונה המצטייר מכל ממשלה קודמת, ובוודאי מכל אלה שעד היום מר רבין עמד בראשן או השתתף בהן, והשינוי כולו לרעה, כולו מעורר חששות כבדים, כולו רק לשלילה. כיהודי לאומי, נאמנותי מסורה בראש ובראשונה לעם היהודי ולאינטרסים החיוניים שלו, ורק בכפוף לכך, ובשורה שנייה, למסגרת המפלגתית. לכן גם, בשם מפלגתי, אינני מהסס כלל לומר למר רבין מעל במה זו, כי אם יפריך את החששות החמורים שממשלתו מולידה כמעט בלב כל יהודי, ואם יוכיח כי גם בהרכב זה הוא מקדם ומשרת את ענייניו של העם היהודי ומבצר את יהודיותה של מדינת ישראל – הוא יגלה כי הליכוד איננו אופוזיציה מופקרת, כפי שהיתה מפלגתו ב-15 השנים האחרונות, אלא אופוזיציה אחראית. אבל, אוי למר רבין מאתנו ואוי לממשלה אם מדיניותו ומעשיו, וקודם כול בתחומי הביטחון הלאומי – המשא-ומתן עם ערביי ארץ-ישראל, ההתיישבות היהודית בכל רחבי ארץ-ישראל המערבית, שחייבת להימשך, והמפה החדשה – זהו המהפך האמיתי שהביאו ממשלות הליכוד. זה דבר שאין איש יכול לשנותו עוד, אבל יש להמשיך בחיזוק המפה – –",9

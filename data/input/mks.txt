@@ -1,0 +1,8 @@
+# Example MK names (one per line)
+# Replace with actual MK names from your data
+
+# יצחק רבין
+# בנימין נתניהו
+# שמעון פרס
+# אריאל שרון
+צבי סוכות

@@ -1,0 +1,6 @@
+# Example topics (one per line)
+# Must match keys in config/topic_descriptions.yaml
+
+התיישבות
+נישואים_אזרחיים
+תחבורה_ציבורית_בשבת
