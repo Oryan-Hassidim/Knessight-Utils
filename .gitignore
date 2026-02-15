@@ -41,9 +41,7 @@ env/
 .env.local
 
 # Project specific
-data/cache/
 data/logs/
-data/intermediate/
 
 # OS
 .DS_Store

@@ -155,14 +155,14 @@ class BatchManager:
         ) as progress:
 
             # Track each batch separately
-            batch_tasks = {}
-            for batch_id in batch_ids:
-                batch_info = self._batch_jobs.get(batch_id, {})
-                request_count = batch_info.get("request_count", 0)
-                task = progress.add_task(
-                    f"[cyan]Batch {batch_id[:8]}...", total=request_count, completed=0
+            batch_tasks = {
+                batch_id: progress.add_task(
+                    f"[cyan]Batch {batch_id[:8]}...",
+                    total=self._batch_jobs.get(batch_id, {}).get("request_count", 0),
+                    completed=0,
                 )
-                batch_tasks[batch_id] = task
+                for batch_id in batch_ids
+            }
 
             completed = {}
             remaining = list(batch_ids)
@@ -279,7 +279,7 @@ class BatchManager:
         for line in content.strip().split("\n"):
             if line:
                 results.append(json.loads(line))
-
+        # TODOL: list comprehension
         return results
 
     def retry_failed_requests(

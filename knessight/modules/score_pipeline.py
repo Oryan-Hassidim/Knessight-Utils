@@ -119,27 +119,43 @@ class ScorePipeline:
             )
             return []
 
-        filtered_speeches = []
+        speeches = []
         with open(csv_path, "r", encoding="utf-8") as f:
             reader = csv.DictReader(f)
-            filtered_speeches = list(reader)
+            speeches = list(reader)
 
-        if not filtered_speeches:
+        if not speeches:
             self.console.print(
                 f"[yellow]Empty filtered speeches: {csv_path.name}[/yellow]"
             )
             return []
 
         self.console.print(
-            f"[cyan]Scoring {len(filtered_speeches)} speeches for person_id {person_id}, topic: {topic}[/cyan]"
+            f"[cyan]Scoring {len(speeches)} speeches for person_id {person_id}, topic: {topic}[/cyan]"
         )
 
         # Load scoring prompt
         scoring_prompt = self.config.load_scoring_prompt(topic)
 
-        # Build scoring requests
+        # Filter by relevance threshold before scoring
+        threshold = self.config.RELEVANCE_THRESHOLD
+        speeches_above_threshold = [
+            s for s in speeches if float(s.get("RelevanceScore", 0)) >= threshold
+        ]
+
+        if not speeches_above_threshold:
+            self.console.print(
+                f"[yellow]No speeches above threshold ({threshold}) for scoring: {csv_path.name}[/yellow]"
+            )
+            return []
+
+        self.console.print(
+            f"[cyan]Scoring {len(speeches_above_threshold)} speeches above threshold for person_id {person_id}, topic: {topic}[/cyan]"
+        )
+
+        # Build scoring requests only for speeches above threshold
         requests = []
-        for speech_data in filtered_speeches:
+        for speech_data in speeches_above_threshold:
             speech_id = int(speech_data["Id"])
             text = speech_data["Text"]
 

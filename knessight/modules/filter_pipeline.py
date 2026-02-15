@@ -235,8 +235,8 @@ Respond with JSON only, format:
             # Query ONLY the speeches we need by ID
             speech_map = self.database.get_speeches_by_ids(speech_ids)
 
-            # Group filtered speeches by topic
-            filtered_by_topic = defaultdict(list)
+            # Group all speeches by topic, saving all results regardless of threshold
+            all_by_topic = defaultdict(list)
 
             for result in results:
                 if result.get("response", {}).get("status_code") != 200:
@@ -260,18 +260,15 @@ Respond with JSON only, format:
                     if not speech_text:
                         continue
 
-                    # Filter by threshold
                     for topic, score_data in relevance_scores.items():
                         relevance = score_data.get("relevance", 0)
-
-                        if relevance >= self.config.RELEVANCE_THRESHOLD:
-                            filtered_by_topic[topic].append(
-                                {
-                                    "Id": speech_id,
-                                    "Text": speech_text,
-                                    "RelevanceScore": relevance,
-                                }
-                            )
+                        all_by_topic[topic].append(
+                            {
+                                "Id": speech_id,
+                                "Text": speech_text,
+                                "RelevanceScore": relevance,
+                            }
+                        )
 
                 except (json.JSONDecodeError, KeyError, ValueError) as e:
                     self.console.print(
@@ -279,8 +276,8 @@ Respond with JSON only, format:
                     )
                     continue
 
-            # Save filtered speeches to intermediate CSVs
-            for topic, speeches in filtered_by_topic.items():
+            # Save all speeches to intermediate CSVs (no threshold filtering)
+            for topic, speeches in all_by_topic.items():
                 self._save_filtered_speeches(person_id, topic, speeches)
 
             # Mark all topics as filter_complete
@@ -289,7 +286,7 @@ Respond with JSON only, format:
 
             self.console.print(
                 f"[green]✓ Processed batch {batch_id}: "
-                f"{sum(len(s) for s in filtered_by_topic.values())} speeches saved across {len(filtered_by_topic)} topics[/green]"
+                f"{sum(len(s) for s in all_by_topic.values())} speeches saved across {len(all_by_topic)} topics[/green]"
             )
 
         except Exception as e:

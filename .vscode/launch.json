@@ -2,12 +2,28 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python Debugger: Current File with Arguments",
+            "name": "Python Debugger: filter",
             "type": "debugpy",
             "request": "launch",
-            "program": "${file}",
+            "program": "${workspaceFolder}/main.py",
             "console": "integratedTerminal",
-            "args": "${command:pickArgs}"
+            "args": [
+                "filter",
+                "--force-reprocess"
+            ],
+            "preLaunchTask": "uv sync"
+        },
+        {
+            "name": "Python Debugger: score",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/main.py",
+            "console": "integratedTerminal",
+            "args": [
+                "score",
+                "--force-reprocess"
+            ],
+            "preLaunchTask": "uv sync"
         }
     ]
 }
