@@ -1,0 +1,24 @@
+{
+  "id": 30055,
+  "knessetSiteId": 30055,
+  "name": "בצלאל סמוטריץ'",
+  "imageUrl": "",
+  "description": "Faction: הבית היהודי בראשות נפתלי בנט, Party: הבית היהודי",
+  "Topics": [
+    {
+      "topicName": "התיישבות",
+      "count": 100,
+      "average": 7.25
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 26,
+      "average": 3.19
+    },
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 16,
+      "average": 2.44
+    }
+  ]
+}

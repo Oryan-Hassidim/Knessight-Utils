@@ -10,12 +10,12 @@ class Config:
     """Manages loading and access to configuration and prompts."""
 
     # Default settings
-    DATABASE_PATH = "knesset.db"
+    DATABASE_PATH = "C:\\Users\\בצלאל\\Desktop\\לימודים\\6. פרוייקטים\\IsraPolitics\\Data\\IsraParlTweet.db"
     CLIENT_DATA_PATH = "data/client_data"
     FILTER_MODEL_NAME = "gpt-4o-mini"
     SCORE_MODEL_NAME = "gpt-4o"
     REASONING_SAMPLE_RATE = 0.1
-    BATCH_SIZE = 10000
+    BATCH_SIZE = 100
     BATCH_POLL_INTERVAL = 30
     RELEVANCE_THRESHOLD = 4
     RETRY_ATTEMPTS = 3

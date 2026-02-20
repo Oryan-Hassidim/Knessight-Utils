@@ -65,30 +65,65 @@ class FilterPipeline:
         for person_id, topic in pairs:
             person_topics[person_id].add(topic)
 
-        # Process each person
+        # Process each person and collect all batches
         all_batch_ids = []
 
         for person_id, topics in person_topics.items():
             batch_ids = self._process_person(person_id, list(topics))
             all_batch_ids.extend(batch_ids)
 
-        # Poll for completion
+        # Submit and poll batches in tranches to avoid hitting token limits
+        # Process in groups, waiting for results before submitting more
         if all_batch_ids:
-            self.console.print(
-                f"\n[cyan]Polling {len(all_batch_ids)} batch jobs...[/cyan]"
-            )
-            results = self.batch_manager.poll_batches(
-                all_batch_ids, self.config.BATCH_POLL_INTERVAL
-            )
+            self._poll_batches_in_tranches(all_batch_ids)
 
+    def _poll_batches_in_tranches(self, all_batch_ids: List[str], tranche_size: int = 15):
+        """Poll batches in tranches to avoid hitting token limits.
+        
+        Instead of submitting all batches at once, we:
+        1. Poll a tranche of batches
+        2. Wait for them to complete
+        3. Process results
+        4. Move to next tranche
+        
+        Args:
+            all_batch_ids: List of all batch IDs to process
+            tranche_size: How many batches to poll concurrently (default 15)
+        """
+        total_batches = len(all_batch_ids)
+        failed_batch_ids = []
+        
+        for i in range(0, total_batches, tranche_size):
+            tranche = all_batch_ids[i : i + tranche_size]
+            tranche_num = (i // tranche_size) + 1
+            total_tranches = (total_batches + tranche_size - 1) // tranche_size
+            
+            self.console.print(
+                f"\n[cyan]Polling tranche {tranche_num}/{total_tranches} "
+                f"({len(tranche)} batches, {i}-{min(i + tranche_size, total_batches)} of {total_batches})[/cyan]"
+            )
+            
+            # Poll this tranche
+            results = self.batch_manager.poll_batches(
+                tranche, self.config.BATCH_POLL_INTERVAL
+            )
+            
             # Process results
             for batch_id, status in results.items():
                 if status == "completed":
                     self._process_batch_results(batch_id)
                 else:
+                    failed_batch_ids.append(batch_id)
                     self.console.print(
                         f"[red]Batch {batch_id} failed with status: {status}[/red]"
                     )
+                    # Try to get error details
+                    self._print_batch_error_details(batch_id)
+        
+        if failed_batch_ids:
+            self.console.print(
+                f"\n[yellow]⚠ {len(failed_batch_ids)} batch(es) failed and will be retried on next run[/yellow]"
+            )
 
     def _process_person(self, person_id: int, topics: List[str]) -> List[str]:
         """Process all speeches for a person against multiple topics.
@@ -295,6 +330,57 @@ Respond with JSON only, format:
 
             traceback.print_exc()
             raise
+
+    def _print_batch_error_details(self, batch_id: str):
+        """Print detailed error information about a failed batch.
+
+        Args:
+            batch_id: Batch job ID
+        """
+        try:
+            batch = self.batch_manager.client.batches.retrieve(batch_id)
+            
+            # Print request counts
+            self.console.print(
+                f"[yellow]  Batch request counts: "
+                f"total={batch.request_counts.total}, "
+                f"completed={batch.request_counts.completed}, "
+                f"failed={batch.request_counts.failed}[/yellow]"
+            )
+            
+            # Try to retrieve error output file if available
+            if batch.errors and batch.errors.data:
+                self.console.print(f"[yellow]  Errors:[/yellow]")
+                for error in batch.errors.data[:5]:  # Show first 5 errors
+                    self.console.print(f"    {error.message}")
+            
+            if batch.output_file_id:
+                try:
+                    # Try to get error rate by retrieving results
+                    file_response = self.batch_manager.client.files.content(batch.output_file_id)
+                    content = file_response.read().decode("utf-8")
+                    results = [json.loads(line) for line in content.strip().split("\n") if line]
+                    
+                    # Count error responses
+                    error_count = sum(
+                        1 for r in results 
+                        if r.get("response", {}).get("status_code", 200) != 200
+                    )
+                    if error_count > 0:
+                        self.console.print(
+                            f"[yellow]  {error_count}/{len(results)} responses had errors[/yellow]"
+                        )
+                        # Show first error response
+                        for r in results:
+                            if r.get("response", {}).get("status_code", 200) != 200:
+                                self.console.print(
+                                    f"    Sample error: {r.get('response', {}).get('body', {})}"
+                                )
+                                break
+                except Exception as e:
+                    self.console.print(f"[yellow]  Could not retrieve error details: {e}[/yellow]")
+        except Exception as e:
+            self.console.print(f"[yellow]  Could not retrieve batch details: {e}[/yellow]")
 
     def _save_filtered_speeches(self, person_id: int, topic: str, speeches: List[Dict]):
         """Save filtered speeches to intermediate CSV.

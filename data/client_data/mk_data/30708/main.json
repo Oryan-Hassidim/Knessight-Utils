@@ -1,0 +1,24 @@
+{
+  "id": 30708,
+  "knessetSiteId": 30708,
+  "name": "מאי גולן",
+  "imageUrl": "",
+  "description": "Faction: הליכוד, Party: הליכוד",
+  "Topics": [
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 1,
+      "average": 3
+    },
+    {
+      "topicName": "התיישבות",
+      "count": 90,
+      "average": 5.8
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 9,
+      "average": 2.33
+    }
+  ]
+}

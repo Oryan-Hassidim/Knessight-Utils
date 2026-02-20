@@ -27,12 +27,69 @@
     "score_batch_job_ids": []
   },
   "30055_התיישבות": {
-    "status": "pending"
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_6998175fb0b88190a7d3d4bdcc1ebb0b"
+    ],
+    "filter_completed_at": "2026-02-20T10:19:39.088799",
+    "score_batch_job_ids": [
+      "batch_69981af4cff88190bc06016d75c92827"
+    ],
+    "score_completed_at": "2026-02-20T10:30:35.833365"
   },
   "30055_נישואים_אזרחיים": {
-    "status": "pending"
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_6998175fb0b88190a7d3d4bdcc1ebb0b"
+    ],
+    "filter_completed_at": "2026-02-20T10:19:39.088799",
+    "score_batch_job_ids": [
+      "batch_69981af753448190b275d502184de071"
+    ],
+    "score_completed_at": "2026-02-20T10:30:38.815308"
   },
   "30055_תחבורה_ציבורית_בשבת": {
-    "status": "pending"
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_6998175fb0b88190a7d3d4bdcc1ebb0b"
+    ],
+    "filter_completed_at": "2026-02-20T10:19:39.088130",
+    "score_batch_job_ids": [
+      "batch_69981af877188190ae267e09d0fc6511"
+    ],
+    "score_completed_at": "2026-02-20T10:30:37.503415"
+  },
+  "30708_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_699800ee970c8190847b4e157575b93f"
+    ],
+    "filter_completed_at": "2026-02-20T08:43:41.569869",
+    "score_batch_job_ids": [
+      "batch_6998029f05fc8190ad8006142594062f"
+    ],
+    "score_completed_at": "2026-02-20T08:46:15.014987"
+  },
+  "30708_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_699800ee970c8190847b4e157575b93f"
+    ],
+    "filter_completed_at": "2026-02-20T08:43:41.572717",
+    "score_batch_job_ids": [
+      "batch_699802a11d488190a7e4c179c45ad94c"
+    ],
+    "score_completed_at": "2026-02-20T08:46:12.348516"
+  },
+  "30708_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_699800ee970c8190847b4e157575b93f"
+    ],
+    "filter_completed_at": "2026-02-20T08:43:41.574564",
+    "score_batch_job_ids": [
+      "batch_699802a2942c8190b730ef47947caca8"
+    ],
+    "score_completed_at": "2026-02-20T08:46:15.811002"
   }
 }
