@@ -51,6 +51,8 @@ Results for each configuration are emitted separately (files include the boundar
 
 Consistency testing measures how stable your model is by running it multiple times on the same data. This is split into two phases:
 
+##### Scoring Consistency
+
 **Phase 1: Generate consistency data**
 ```bash
 # Run your models multiple times and save the results
@@ -82,6 +84,59 @@ This performs two types of analysis:
    - Mean absolute difference (MAD) between model scores
    - Cross-model variability (std dev and range)
    - Identifies sentences where models disagree most
+
+##### Filter Consistency
+
+**Phase 1: Generate filter consistency data**
+```bash
+# Run filter models multiple times and save the results
+python -m evaluation.report --generate-filter-consistency
+```
+
+This will:
+- Load unfiltered sentences from `data/input/` (or fallback to intermediate)
+- Run each filter model in `FILTER_MODEL_REGISTRY` 3 times (configurable with `--consistency-runs`)
+- Save results to `evaluation/data/filter_consistency/filter_consistency_<model_name>.csv`
+
+**Phase 2: Analyze filter consistency**
+```bash
+# Analyze the saved filter data
+python -m evaluation.report --filter-consistency
+```
+
+This performs three types of analysis:
+
+1. **Binary decision consistency**: How often does the model change its mind about relevance (relevant vs. not-relevant)?
+   - Perfect agreement rate (all runs identical)
+   - Split decisions (model sometimes changes decision)
+   - Most unstable sentences
+
+2. **Intra-model score consistency** (same filter model, multiple runs):
+   - Standard deviation of relevance scores (1-5 scale)
+   - Coefficient of variation for normalized variability
+   - Identifies sentences with high score variability
+
+3. **Inter-model consistency** (different filter models on same data):
+   - Pairwise correlations between filter models
+   - Mean absolute difference between models
+   - Binary decision agreement across models
+   - Cross-model variability analysis
+
+To save the report to a file, add `--output-dir`:
+```bash
+python -m evaluation.report --filter-consistency \
+    --output-dir evaluation/results
+```
+
+This will save the full analysis to `evaluation/results/filter_consistency_report.txt`.
+
+You can also customize the binary relevance threshold (default 4.0):
+```bash
+python -m evaluation.report --filter-consistency \
+    --filter-threshold 3.5
+```
+
+#### Consistency Configuration
 
 To save the report to a file, add `--output-dir`:
 ```bash

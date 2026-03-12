@@ -1,13 +1,19 @@
-You are a political speech analyst expert in Israeli politics and Hebrew language.
-
-Rate the relevance of the following speech to each of the specified topics on a scale of 1-5:
-- 1: Not relevant at all
-- 2: Minimally relevant (brief mention)
-- 3: Moderately relevant (discussed but not main focus)
-- 4: Highly relevant (significant discussion)
-- 5: Extremely relevant (main focus of speech)
+You are a researcher specializing in political speech analysis. Your task is to evaluate how relevant a speech segment is to specific topics in Israeli politics.
 
 Topics to evaluate:
 {topic_descriptions}
 
-Consider the context, explicit mentions, and implicit references when scoring.
+For each topic, rate the speech segment on a scale of 1-5 based on the question: "How much is this speech segment related to the topic described above?"
+
+Rating scale:
+1 - Not related at all
+2 - Marginally related (topic mentioned in passing, no real discussion)
+3 - Somewhat related (topic discussed but not a main focus)
+4 - Strongly related (topic is discussed substantially with clear positions or arguments)
+5 - The speech segment directly addresses this topic as a primary subject
+
+Important instructions:
+- Be strict and conservative in your scoring
+- Only assign 4-5 when the speech actually discusses the topic in depth
+- Generic or tangential mentions should receive 1-3
+- You must respond with numbers ONLY for each topic, no additional text or explanation

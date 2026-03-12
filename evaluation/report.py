@@ -4,7 +4,7 @@ import argparse
 import pandas as pd
 from pathlib import Path
 from dotenv import load_dotenv
-from . import metrics
+from .methods import metrics
 
 # Load environment variables from .env file (or .env.example as fallback)
 if not load_dotenv():
@@ -79,10 +79,25 @@ def run_score_eval(
         bucket_configs = [[3, 7]]
 
     for idx, boundaries in enumerate(bucket_configs):
-        print(f"Bucket confusion {boundaries}:")
+        print(f"\nBucket confusion {boundaries}:")
         cm, kappa = metrics.bucket_confusion(manual, model, boundaries)
+        
+        # Calculate normalized version for display
+        cm_array = cm.values
+        row_sums = cm_array.sum(axis=1, keepdims=True)
+        row_sums_safe = row_sums.copy()
+        row_sums_safe[row_sums_safe == 0] = 1  # Avoid division by zero
+        cm_normalized = (cm_array / row_sums_safe) * 100
+        
+        print("\nRaw counts:")
         print(cm)
-        print("Kappa=", kappa)
+        print("\nNormalized by row (%):")
+        import numpy as np
+        cm_norm_df = pd.DataFrame(cm_normalized, 
+                                   index=cm.index, 
+                                   columns=cm.columns)
+        print(cm_norm_df.round(1))
+        print(f"\nCohen's Kappa: {kappa:.3f}")
 
         # save
         if save_dir is not None:
@@ -97,13 +112,22 @@ def run_score_eval(
         if plot or show:
             try:
                 import matplotlib.pyplot as plt
+                import numpy as np
             except ImportError:
                 print("matplotlib not installed, skipping plots")
                 return
-            plt.figure(figsize=(5, 5))
+            plt.figure(figsize=(6, 5))
 
-            plt.imshow(cm, cmap="Blues", aspect="equal")
-            plt.colorbar()
+            # Normalize confusion matrix by row (true label) to get percentages
+            cm_array = cm.values
+            row_sums = cm_array.sum(axis=1, keepdims=True)
+            # Avoid division by zero
+            row_sums = np.where(row_sums == 0, 1, row_sums)
+            cm_normalized = (cm_array / row_sums) * 100
+
+            plt.imshow(cm_normalized, cmap="Blues", aspect="equal", vmin=0, vmax=100)
+            cbar = plt.colorbar()
+            cbar.set_label('Percentage (%)', rotation=270, labelpad=20)
 
             # build bucket labels
             labels = []
@@ -117,14 +141,21 @@ def run_score_eval(
             plt.xticks(range(len(labels)), labels)
             plt.yticks(range(len(labels)), labels)
 
-            plt.title(f"Bucket Confusion {boundaries}")
-            plt.xlabel("Predicted bucket")
-            plt.ylabel("True bucket")
+            plt.title(f"Bucket Confusion Matrix (Normalized by Row)\nBoundaries: {boundaries}", pad=15)
+            plt.xlabel("Predicted Bucket", fontweight='bold')
+            plt.ylabel("True Bucket", fontweight='bold')
 
-            # numbers inside cells
+            # Add text annotations with percentage and count
             for i in range(cm.shape[0]):
                 for j in range(cm.shape[1]):
-                    plt.text(j, i, int(cm.iat[i, j]), ha="center", va="center")
+                    count = int(cm_array[i, j])
+                    percentage = cm_normalized[i, j]
+                    # Show percentage and count
+                    text = f"{percentage:.1f}%\n({count})"
+                    # Use white text for dark cells, black for light cells
+                    color = "white" if percentage > 50 else "black"
+                    plt.text(j, i, text, ha="center", va="center", 
+                            fontsize=10, color=color, fontweight='bold')
 
             suffix = "_" + "_".join(str(int(b)) for b in boundaries)
 
@@ -157,11 +188,6 @@ def main():
         help="Bucket boundary set for scoring; comma-separated values (e.g. 3,7). Can be used multiple times.",
     )
     parser.add_argument(
-        "--consistency",
-        action="store_true",
-        help="Analyze consistency from saved data (run --generate-consistency first)",
-    )
-    parser.add_argument(
         "--generate-consistency",
         action="store_true",
         help="Generate consistency data by running models multiple times",
@@ -188,6 +214,27 @@ def main():
         default="התיישבות",
         help="Topic name for consistency testing (default: התיישבות)",
     )
+    parser.add_argument(
+        "--generate-filter-consistency",
+        action="store_true",
+        help="Generate filter consistency data by running filter models multiple times",
+    )
+    parser.add_argument(
+        "--filter-consistency-dir",
+        default="evaluation/data/filter_consistency",
+        help="Directory for filter consistency data (default: evaluation/data/filter_consistency)",
+    )
+    parser.add_argument(
+        "--filter-threshold",
+        type=float,
+        default=4.0,
+        help="Relevance threshold for binary filter decisions (default: 4.0)",
+    )
+    parser.add_argument(
+        "--plot-consistency",
+        action="store_true",
+        help="Generate all consistency plots from existing data (both filter and score)",
+    )
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
@@ -206,7 +253,7 @@ def main():
 
     if args.generate_consistency:
         # generate consistency data
-        from .experiments.generate_consistency_data import generate_consistency_data
+        from .methods.generate_consistency_data import generate_consistency_data
         generate_consistency_data(
             Path(args.consistency_dir), 
             n_runs=args.consistency_runs,
@@ -214,11 +261,29 @@ def main():
             topic=args.consistency_topic
         )
 
-    if args.consistency:
-        # analyze existing consistency data
-        from .experiments.consistency import analyze_consistency
-        output_path = (save_dir / "consistency_report.txt") if save_dir else None
-        analyze_consistency(Path(args.consistency_dir), output_path)
+    if args.generate_filter_consistency:
+        # generate filter consistency data
+        from .methods.generate_filter_consistency_data import generate_filter_consistency_data
+        generate_filter_consistency_data(
+            Path(args.filter_consistency_dir), 
+            n_runs=args.consistency_runs,
+            n_sentences=args.consistency_sentences,
+            topic=args.consistency_topic
+        )
+
+    if args.plot_consistency:
+        # unified consistency plotting
+        from .methods.plot_consistency import plot_all_consistency
+        output_dir = save_dir or Path("evaluation/results")
+        bucket_boundaries = bucket_configs[0] if bucket_configs else None
+        plot_all_consistency(
+            filter_data_dir=Path(args.filter_consistency_dir),
+            score_data_dir=Path(args.consistency_dir),
+            output_dir=output_dir,
+            show=args.show,
+            filter_threshold=args.filter_threshold,
+            bucket_boundaries=bucket_boundaries
+        )
 
 if __name__ == "__main__":
     main()

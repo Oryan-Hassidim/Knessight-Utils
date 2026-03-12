@@ -210,6 +210,9 @@ def score(
 
         # Generate mks.csv
         output_manager.generate_mks_csv(list(resolved_mks.values()))
+        
+        # Export consolidated scores CSV
+        output_manager.export_all_scores_csv()
 
         console.print("\n[bold green]Score pipeline complete![/bold green]")
 

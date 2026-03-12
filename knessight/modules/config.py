@@ -10,15 +10,19 @@ class Config:
     """Manages loading and access to configuration and prompts."""
 
     # Default settings
-    DATABASE_PATH = "C:\\Users\\בצלאל\\Desktop\\לימודים\\6. פרוייקטים\\IsraPolitics\\Data\\IsraParlTweet.db"
+    DATABASE_PATH = "C:\\Users\\בצלאל\\Desktop\\לימודים\\6. פרוייקטים\\IsraPolitics\\Data\\IsraParlTweet .db"
     CLIENT_DATA_PATH = "data/client_data"
     FILTER_MODEL_NAME = "gpt-4o-mini"
     SCORE_MODEL_NAME = "gpt-4o"
     REASONING_SAMPLE_RATE = 0.1
-    BATCH_SIZE = 100
+    BATCH_SIZE = 300
     BATCH_POLL_INTERVAL = 30
     RELEVANCE_THRESHOLD = 4
     RETRY_ATTEMPTS = 3
+    
+    # Time-weighted scoring settings
+    TIME_WEIGHT_HALF_LIFE_YEARS = 2.0  # Exponential decay: weight = 0.5^(years_ago / half_life)
+    EXPORT_CSV_PATH = "data/client_data/all_mk_scores.csv"
 
     def __init__(self, config_dir: Path = None):
         """Initialize config manager.
