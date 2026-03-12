@@ -1,0 +1,21 @@
+{
+  "id": 12944,
+  "knessetSiteId": 12944,
+  "name": "דני דנון",
+  "imageUrl": "",
+  "description": "Faction: הליכוד, Party: הליכוד",
+  "Topics": [
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 1,
+      "average": 3,
+      "weighted_average": 3.0
+    },
+    {
+      "topicName": "התיישבות",
+      "count": 48,
+      "average": 8.31,
+      "weighted_average": 9.25
+    }
+  ]
+}

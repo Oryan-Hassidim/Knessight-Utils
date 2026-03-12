@@ -1,0 +1,27 @@
+{
+  "id": 23594,
+  "knessetSiteId": 23594,
+  "name": "יאיר לפיד",
+  "imageUrl": "",
+  "description": "Faction: יש עתיד, Party: יש עתיד",
+  "Topics": [
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 8,
+      "average": 7.5,
+      "weighted_average": 7.11
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 5,
+      "average": 1,
+      "weighted_average": 1.0
+    },
+    {
+      "topicName": "התיישבות",
+      "count": 14,
+      "average": 3.5,
+      "weighted_average": 2.6
+    }
+  ]
+}

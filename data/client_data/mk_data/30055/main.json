@@ -8,17 +8,20 @@
     {
       "topicName": "התיישבות",
       "count": 100,
-      "average": 7.25
+      "average": 7.25,
+      "weighted_average": 6.74
     },
     {
       "topicName": "תחבורה_ציבורית_בשבת",
       "count": 26,
-      "average": 3.19
+      "average": 3.19,
+      "weighted_average": 3.39
     },
     {
       "topicName": "נישואים_אזרחיים",
       "count": 16,
-      "average": 2.44
+      "average": 2.44,
+      "weighted_average": 2.25
     }
   ]
 }

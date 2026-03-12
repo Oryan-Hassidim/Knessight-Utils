@@ -1,0 +1,27 @@
+{
+  "id": 504,
+  "knessetSiteId": 504,
+  "name": "זהבה גלאון",
+  "imageUrl": "",
+  "description": "Faction: מרצ, Party: מרצ",
+  "Topics": [
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 51,
+      "average": 5.02,
+      "weighted_average": 5.66
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 11,
+      "average": 4.36,
+      "weighted_average": 3.18
+    },
+    {
+      "topicName": "התיישבות",
+      "count": 193,
+      "average": 1.68,
+      "weighted_average": 1.83
+    }
+  ]
+}

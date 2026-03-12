@@ -1,0 +1,27 @@
+{
+  "id": 23565,
+  "knessetSiteId": 23565,
+  "name": "מרב מיכאלי",
+  "imageUrl": "",
+  "description": "Faction: מפלגת העבודה הישראלית, Party: העבודה",
+  "Topics": [
+    {
+      "topicName": "התיישבות",
+      "count": 44,
+      "average": 2.75,
+      "weighted_average": 2.61
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 36,
+      "average": 4.14,
+      "weighted_average": 4.72
+    },
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 35,
+      "average": 6.91,
+      "weighted_average": 6.85
+    }
+  ]
+}

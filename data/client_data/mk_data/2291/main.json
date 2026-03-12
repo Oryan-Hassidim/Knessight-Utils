@@ -1,0 +1,27 @@
+{
+  "id": 2291,
+  "knessetSiteId": 2291,
+  "name": "אריה מכלוף דרעי",
+  "imageUrl": "",
+  "description": "Faction: התאחדות הספרדים שומרי תורה - תנועת ש\"ס, Party: התאחדות הספרדים שומרי תורה",
+  "Topics": [
+    {
+      "topicName": "התיישבות",
+      "count": 38,
+      "average": 7.18,
+      "weighted_average": 8.05
+    },
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 12,
+      "average": 1.58,
+      "weighted_average": 1.02
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 18,
+      "average": 1.78,
+      "weighted_average": 1.61
+    }
+  ]
+}
