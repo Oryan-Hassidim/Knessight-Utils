@@ -47,65 +47,44 @@ def test_bucket_confusion_full_matrix():
 
 
 def test_consistency_workflow(monkeypatch, tmp_path, capsys):
-    """Test the two-phase consistency workflow: generate then analyze."""
-    import pandas as pd
-    
-    # Setup: create filter_gold.xlsx with sample sentences
-    data_dir = tmp_path / "data"
-    data_dir.mkdir()
-    filter_gold = data_dir / "filter_gold.xlsx"
-    df = pd.DataFrame({
-        "sentence": ["sentence A", "sentence B", "sentence C"],
-        "manual_score": [1, 2, 3],
-        "model_score": [1, 2, 3]
-    })
-    df.to_excel(filter_gold, index=False)
-    
-    consistency_dir = tmp_path / "consistency"
-    
-    # Patch load_sentences to use our temp file
-    import evaluation.experiments.generate_consistency_data as gen_mod
-    
-    def fake_load(n=100):
-        df2 = pd.read_excel(filter_gold)
-        return df2["sentence"].tolist()
-    
-    monkeypatch.setattr(gen_mod, "load_sentences", fake_load)
-    
-    # Phase 1: Generate data
-    monkeypatch.setattr("sys.argv", [
-        "report.py",
-        "--generate-consistency",
-        "--consistency-dir", str(consistency_dir),
-        "--consistency-runs", "2"
-    ])
-    report.main()
-    
-    # Verify CSV files were created
-    csv_files = list(consistency_dir.glob("consistency_*.csv"))
-    assert len(csv_files) > 0, "No consistency CSV files generated"
-    
-    # Phase 2: Analyze
-    capsys.readouterr()  # clear previous output
+    """Test consistency plotting workflow with existing consistency CSV data."""
+    score_dir = tmp_path / "consistency"
+    filter_dir = tmp_path / "filter_consistency"
     output_dir = tmp_path / "output"
-    monkeypatch.setattr("sys.argv", [
-        "report.py",
-        "--consistency",
-        "--consistency-dir", str(consistency_dir),
-        "--output-dir", str(output_dir)
-    ])
+    score_dir.mkdir()
+    filter_dir.mkdir()
+
+    # Minimal mock consistency data (2 runs, 3 sentences)
+    mock_df = pd.DataFrame(
+        {
+            "sentence": ["sentence A", "sentence B", "sentence C"],
+            "run_0": [1.0, 2.0, 3.0],
+            "run_1": [1.5, 2.0, 3.5],
+        }
+    )
+    mock_df.to_csv(score_dir / "consistency_gpt-4o-mini.csv", index=False)
+    mock_df.to_csv(filter_dir / "filter_consistency_gpt-4o-mini.csv", index=False)
+
+    monkeypatch.setattr(
+        "sys.argv",
+        [
+            "report.py",
+            "--plot-consistency",
+            "--score-dir",
+            str(score_dir),
+            "--filter-dir",
+            str(filter_dir),
+            "--output-dir",
+            str(output_dir),
+        ],
+    )
     report.main()
-    
+
     out = capsys.readouterr().out
-    assert "Model:" in out or "Model" in out
-    assert "variability" in out.lower()
-    
-    # Verify report was saved
-    report_file = output_dir / "consistency_report.txt"
-    assert report_file.exists(), "Consistency report file was not created"
-    report_text = report_file.read_text(encoding="utf-8")
-    assert "Model:" in report_text
-    assert "variability" in report_text.lower()
+    assert "Generating filter consistency plots" in out
+    assert "Generating score consistency plots" in out
+    assert (output_dir / "filter_consistency_summary.png").exists()
+    assert (output_dir / "score_consistency_summary.png").exists()
 
 
 

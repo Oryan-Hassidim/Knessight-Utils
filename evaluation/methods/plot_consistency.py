@@ -54,6 +54,7 @@ def plot_all_consistency(
             show=show
         )
         print(f"  → Saved to {output_dir / 'filter_consistency_summary.png'}")
+        print(f"  → Saved to {output_dir / 'filter_consistency_summary.svg'}")
     
     # Process score consistency if available
     if has_score:
@@ -66,6 +67,7 @@ def plot_all_consistency(
             show=show
         )
         print(f"  → Saved to {output_dir / 'score_consistency_summary.png'}")
+        print(f"  → Saved to {output_dir / 'score_consistency_summary.svg'}")
     
     print(f"\nAll consistency plots saved to {output_dir}")
 
@@ -228,7 +230,8 @@ def _create_consistency_plot(metrics, plot_type: str, output_dir: Path, show: bo
         inter_ylim = [0, 105]
         
         plot_title = 'Filter Consistency Analysis'
-        filename = 'filter_consistency_summary.png'
+        filename_png = 'filter_consistency_summary.png'
+        filename_svg = 'filter_consistency_summary.svg'
     else:  # score
         intra_metric1_key = 'bucket_agreement'
         intra_metric1_label = 'Mean Bucket Agreement'
@@ -246,7 +249,8 @@ def _create_consistency_plot(metrics, plot_type: str, output_dir: Path, show: bo
         inter_ylim = None
         
         plot_title = 'Score Consistency Analysis'
-        filename = 'score_consistency_summary.png'
+        filename_png = 'score_consistency_summary.png'
+        filename_svg = 'score_consistency_summary.svg'
     
     models = list(metrics[intra_metric1_key].keys())
     
@@ -336,7 +340,8 @@ def _create_consistency_plot(metrics, plot_type: str, output_dir: Path, show: bo
     plt.suptitle(plot_title, fontsize=15, fontweight='bold', y=0.98)
     plt.tight_layout(rect=[0, 0, 1, 0.96])
     
-    plt.savefig(output_dir / filename, dpi=150, bbox_inches='tight')
+    plt.savefig(output_dir / filename_png, dpi=150, bbox_inches='tight')
+    plt.savefig(output_dir / filename_svg, format='svg', bbox_inches='tight')
     if show:
         plt.show()
     plt.close()

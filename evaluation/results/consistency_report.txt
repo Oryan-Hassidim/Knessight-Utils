@@ -1,0 +1,127 @@
+
+======================================================================
+INTRA-MODEL CONSISTENCY (same model, multiple runs)
+======================================================================
+Bucket boundaries: [3, 7] (creates 3 buckets)
+
+------------------------------------------------------------
+Model: gpt-4o-mini-temp1
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Bucket agreement (same bucket assignment across runs):
+  Perfect agreement: 7/10 (70.0%)
+  Mean agreement rate: 90.0%
+    → How often runs assign sentence to same bucket
+
+Intra-run variability (across runs for each sentence):
+  Mean std dev: 0.8660
+    → Average inconsistency per sentence. Lower is better (stable scoring).
+  Median std dev: 0.2887
+    → Middle value, robust to outliers. Compare with mean to detect skew.
+  Max std dev: 5.1962
+    → Worst-case variability. Flags extremely unstable sentences.
+  Mean coefficient of variation: 18.34%
+    → Variability relative to score magnitude. <15% is good, >30% is concerning.
+
+Most variable sentence (std=5.196, CV=74.2%):
+  'יש לי הצעה לסדר. 34 שרים זה – – –'
+  Scores: ['10.0', '10.0', '1.0']
+  Range: 1.0 - 10.0
+
+Sentences with high variability (std>1.0 or CV>20%): 3
+  - std=1.155, CV=49.5%: 'אדוני השר, ראשית, אני מברך על עמדתך בדבר חשיבות הת...'
+  - std=1.155, CV=31.5%: 'אדוני היושב-ראש, אדוני השר, הצטערתי לראות שלפני כמ...'
+  - std=5.196, CV=74.2%: 'יש לי הצעה לסדר. 34 שרים זה – – –...'
+
+------------------------------------------------------------
+Model: gpt-4o-mini
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Bucket agreement (same bucket assignment across runs):
+  Perfect agreement: 9/10 (90.0%)
+  Mean agreement rate: 96.7%
+    → How often runs assign sentence to same bucket
+
+Intra-run variability (across runs for each sentence):
+  Mean std dev: 0.3464
+    → Average inconsistency per sentence. Lower is better (stable scoring).
+  Median std dev: 0.0000
+    → Middle value, robust to outliers. Compare with mean to detect skew.
+  Max std dev: 2.3094
+    → Worst-case variability. Flags extremely unstable sentences.
+  Mean coefficient of variation: 16.83%
+    → Variability relative to score magnitude. <15% is good, >30% is concerning.
+
+Most variable sentence (std=2.309, CV=99.0%):
+  'אדוני היושב-ראש, אדוני השר, הצטערתי לראות שלפני כמה שבועות הצטרפה ישראל לרשימה של מדינות אקזוטיות-מה, כמו זימבבואה, גינאה, איי סיישל ועוד רשימה ארוכה, שהמשותף להן הוא דירוג בטיחות הטיסה. ההחלטה הזאת, שבעצם הורידה את דירוג רמת הבטיחות של ישראל מקטגוריה א' לקטגוריה ב', יש לה השלכות רבות מאוד. אני יודע שהמשרד שאתה עומד בראשו טיפל בזה, ויש חוק שטיפל בנושא בשנת 2005, אבל בפועל היום המצב הוא – קודם כול במישור הביטחון של הטסים בשמי ארץ-ישראל, לפי בדיקות שנעשו, אנחנו מדורגים בתחתית הדירוג. זה מטריד אותי קודם כול כמי שלאחרונה לא טס הרבה, אבל אמון על ביטחונם של אזרחי ישראל, שנית, בגלל הדימוי של מדינת ישראל, שנפגע בעקבות הירידה בדירוג, ושלישית, יש פה פגיעה כלכלית קשה, הן בכניסת תיירים למדינה והן פגיעה במוביל הלאומי, "אל על", כי יהיו השלכות על טיסות "אל על" ליעדים אחרים עקב הורדת הדירוג. אני רוצה לקבל בבקשה תשובה – ראשית, למה הגענו למצב שבו אנחנו נמצאים בקטגוריה אחת עם זימבבואה ועם גינאה, ושנית, מה נעשה כדי לתקן את זה מייד.'
+  Scores: ['1.0', '1.0', '5.0']
+  Range: 1.0 - 5.0
+
+Sentences with high variability (std>1.0 or CV>20%): 2
+  - std=1.155, CV=69.3%: 'אדוני היושב-ראש, אדוני השר, אני פונה אליך בנושא שמ...'
+  - std=2.309, CV=99.0%: 'אדוני היושב-ראש, אדוני השר, הצטערתי לראות שלפני כמ...'
+
+------------------------------------------------------------
+Model: gpt-4o
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Bucket agreement (same bucket assignment across runs):
+  Perfect agreement: 9/10 (90.0%)
+  Mean agreement rate: 96.7%
+    → How often runs assign sentence to same bucket
+
+Intra-run variability (across runs for each sentence):
+  Mean std dev: 0.2105
+    → Average inconsistency per sentence. Lower is better (stable scoring).
+  Median std dev: 0.0000
+    → Middle value, robust to outliers. Compare with mean to detect skew.
+  Max std dev: 1.5275
+    → Worst-case variability. Flags extremely unstable sentences.
+  Mean coefficient of variation: 3.49%
+    → Variability relative to score magnitude. <15% is good, >30% is concerning.
+
+Most variable sentence (std=1.528, CV=24.1%):
+  'אדוני השר, ראשית, אני מברך על עמדתך בדבר חשיבות התפקיד של המשרד שבראשו אתה עומד. בעבר, תמיד, כל מי שקיבל את התפקיד, לא קיבל את זה בנפש חפצה, אבל עכשיו אני מקווה שזה ישתנה. שתי שאלות שקשורות למפוני גוש-קטיף. קודם כול, זה עוול גדול מאוד שהממשלה – שידעה לפנות יהודים מבתיהם ביעילות רבה מאוד, במבצע צבאי מצוין – נכשלה בטיפול במפונים-מגורשים, ועד היום הם חיים כפליטים בקרבנו, והגיעו להיות תחת חסדו של משרד הרווחה. דוח מבקר המדינה עסק בנושא ונתן מחמאות למשרד. שתי שאלות לגבי הדוח. ראשית, יש בעיה, שמשפחות המפונים לא רוצות להסתייע בשירותי הרווחה בגלל תיוג שלהם כמקרה רווחה. המבקר כתב שנתתם מענה חלקי בכך שכתבתם שהם לא פותחים תיק רווחה – –
+
+– – אבל הם מקבלים תיוג כלשהו.
+
+אבל עדיין, כתוב בדוח המבקר שהם לא מקבלים סיוע מכיוון שהמשרד – נכון עד לפברואר 2008 – לא פתר את העניין הטכני של לתת סיוע בלי לפתוח תיק רווחה. הנושא השני קשור לאותה סוגיה, לגבי מינהלת סל"ע – שהיום מדברים על פירוקה. אני רוצה לדעת מה עמדת משרד הרווחה לגבי פירוק מינהלת סל"ע.'
+  Scores: ['5.0', '8.0', '6.0']
+  Range: 5.0 - 8.0
+
+Sentences with high variability (std>1.0 or CV>20%): 1
+  - std=1.528, CV=24.1%: 'אדוני השר, ראשית, אני מברך על עמדתך בדבר חשיבות הת...'
+
+
+======================================================================
+INTER-MODEL CONSISTENCY (different models on same data)
+======================================================================
+
+Pairwise correlations (Pearson):
+  gpt-4o vs gpt-4o-mini: r = 0.664 (p=0.0362)
+  gpt-4o vs gpt-4o-mini-temp1: r = 0.768 (p=0.0095)
+  gpt-4o-mini vs gpt-4o-mini-temp1: r = 0.941 (p=0.0000)
+  → r measures how similarly models rank sentences. r>0.9 = strong agreement.
+  → p-value: if <0.05, correlation is statistically significant.
+
+Mean absolute difference between models:
+  gpt-4o vs gpt-4o-mini: MAD = 1.667
+  gpt-4o vs gpt-4o-mini-temp1: MAD = 1.367
+  gpt-4o-mini vs gpt-4o-mini-temp1: MAD = 0.633
+  → Average absolute point difference. MAD<0.5 = close agreement, MAD>1.0 = divergent.
+
+Cross-model variability:
+  Mean std dev across models: 0.959
+    → Average disagreement per sentence. Lower = models see data similarly.
+  Mean range across models: 1.833
+    → Average gap between highest and lowest model scores per sentence.
+
+Most disagreed sentence (std=2.517):
+  'יש לי הצעה לסדר. 34 שרים זה – – –'
+    gpt-4o: 5.00
+    gpt-4o-mini: 10.00
+    gpt-4o-mini-temp1: 7.00
+  → This sentence caused the biggest divergence in model scores.

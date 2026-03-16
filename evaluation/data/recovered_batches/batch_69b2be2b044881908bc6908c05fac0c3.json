@@ -1,0 +1,1352 @@
+[
+  {
+    "id": "batch_req_69b2e20e6bb08190bf462b472435caa0",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent0",
+    "response": {
+      "status_code": 200,
+      "request_id": "6b91a9ce-3a91-4f4e-8c62-803afffc278c",
+      "body": {
+        "id": "chatcmpl-DIbpCQBWLEAESMgcDQAdmxGKfrxsG",
+        "object": "chat.completion",
+        "created": 1773327674,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e5b348190853ae2a7b9932bc9",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent1",
+    "response": {
+      "status_code": 200,
+      "request_id": "0f2598b1-25bf-4929-ac5f-b4caa2b57f1a",
+      "body": {
+        "id": "chatcmpl-DIbpOTviz4lNuMzn0iCZyP3naw0ED",
+        "object": "chat.completion",
+        "created": 1773327686,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1486,
+          "completion_tokens": 15,
+          "total_tokens": 1501,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e664481909b6034cdc36eb4fa",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent2",
+    "response": {
+      "status_code": 200,
+      "request_id": "f398a358-b8d5-4096-af85-ec79707887bb",
+      "body": {
+        "id": "chatcmpl-DIbpPDQb2pbHoNBpVknnaw53tn49x",
+        "object": "chat.completion",
+        "created": 1773327687,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 3}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e65e0819090e6e35b0b704602",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent3",
+    "response": {
+      "status_code": 200,
+      "request_id": "21ced4c0-f28b-49d8-986e-4b914a54f2e0",
+      "body": {
+        "id": "chatcmpl-DIbpVD1WRPL3MGtf9H4Dq0Z8PTezQ",
+        "object": "chat.completion",
+        "created": 1773327693,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 559,
+          "completion_tokens": 15,
+          "total_tokens": 574,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_2989ea8a0f"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e5c6881908bf323908dbbff53",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent4",
+    "response": {
+      "status_code": 200,
+      "request_id": "f122803d-fc41-493d-a5ab-7aad661745d1",
+      "body": {
+        "id": "chatcmpl-DIbpGhKUuSxfM2zObus5Er7RoU0bH",
+        "object": "chat.completion",
+        "created": 1773327678,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 921,
+          "completion_tokens": 15,
+          "total_tokens": 936,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e551c81908ab7f03e23eaae5a",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent5",
+    "response": {
+      "status_code": 200,
+      "request_id": "7dd21130-2a23-467c-9275-581f97674c64",
+      "body": {
+        "id": "chatcmpl-DIbp9CVqj5zdpeK8LYR2neodP1gce",
+        "object": "chat.completion",
+        "created": 1773327671,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2331,
+          "completion_tokens": 15,
+          "total_tokens": 2346,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_d9e3c0c55c"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e77048190a4850955ed3d3da7",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent6",
+    "response": {
+      "status_code": 200,
+      "request_id": "0fb8a9ac-ce7e-4237-adb8-d49ee6f63b73",
+      "body": {
+        "id": "chatcmpl-DIbp9f5glSKq5diYarBi9L9p9Tzo2",
+        "object": "chat.completion",
+        "created": 1773327671,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2372,
+          "completion_tokens": 15,
+          "total_tokens": 2387,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e7ea881908d9a016eb0aa1c7d",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent7",
+    "response": {
+      "status_code": 200,
+      "request_id": "6e716eae-3096-454e-8891-0d02ebc76ccd",
+      "body": {
+        "id": "chatcmpl-DIbpADGzFBPdL4oeV2uPIO5X7eroi",
+        "object": "chat.completion",
+        "created": 1773327672,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 390,
+          "completion_tokens": 15,
+          "total_tokens": 405,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e5ef881909ff5bc36ea4963cd",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent8",
+    "response": {
+      "status_code": 200,
+      "request_id": "3e5a8457-aa7f-4ad9-afb0-cd92676eebc7",
+      "body": {
+        "id": "chatcmpl-DIbp9qn9cSOPFsB74d2zP8toHAZOb",
+        "object": "chat.completion",
+        "created": 1773327671,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1127,
+          "completion_tokens": 15,
+          "total_tokens": 1142,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20e742c81909f63456fead7c3ff",
+    "custom_id": "gpt-4o-mini-temp1_run0_sent9",
+    "response": {
+      "status_code": 200,
+      "request_id": "adb1a3f1-3bc0-403f-8a88-0d157f329b74",
+      "body": {
+        "id": "chatcmpl-DIcfloz9U5S8AZipqSwOmiKAFfUqs",
+        "object": "chat.completion",
+        "created": 1773330933,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 371,
+          "completion_tokens": 15,
+          "total_tokens": 386,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_1c8bdaba3d"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20efa248190baeda0ef544c9a8f",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent0",
+    "response": {
+      "status_code": 200,
+      "request_id": "d29382d4-0ba8-4903-8b67-703c2b383ee3",
+      "body": {
+        "id": "chatcmpl-DIbpDh2jWu2S4BFF0xqrPalVPlMEU",
+        "object": "chat.completion",
+        "created": 1773327675,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20edd488190bba8aeb9cbeba33d",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent1",
+    "response": {
+      "status_code": 200,
+      "request_id": "2697aac4-7424-484c-9795-f88a07c1985b",
+      "body": {
+        "id": "chatcmpl-DIbpUFmdRZgfnDRRMWm5loEC7nFNq",
+        "object": "chat.completion",
+        "created": 1773327692,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1486,
+          "completion_tokens": 15,
+          "total_tokens": 1501,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20ee5d88190a14874e8ba947f1d",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent2",
+    "response": {
+      "status_code": 200,
+      "request_id": "7219e79d-5340-4a55-9b43-2c04b280766c",
+      "body": {
+        "id": "chatcmpl-DIbpEkQ4WBzG8AoZxPkDPssxj0SgH",
+        "object": "chat.completion",
+        "created": 1773327676,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 3}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20eed60819083c5bb2b927d468c",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent3",
+    "response": {
+      "status_code": 200,
+      "request_id": "04be9a15-4713-4319-a75d-890ecbf15cc5",
+      "body": {
+        "id": "chatcmpl-DIbpSxe0gwNsO7x0b6WvPcloBWgMr",
+        "object": "chat.completion",
+        "created": 1773327690,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 559,
+          "completion_tokens": 15,
+          "total_tokens": 574,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_2989ea8a0f"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20ef4a081909bea38c20fad4082",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent4",
+    "response": {
+      "status_code": 200,
+      "request_id": "c6464c3d-265c-4c72-b4be-6f79baa03cb1",
+      "body": {
+        "id": "chatcmpl-DIbpDNa2Z7Hbba2zi5OBEd50C0iW8",
+        "object": "chat.completion",
+        "created": 1773327675,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 921,
+          "completion_tokens": 15,
+          "total_tokens": 936,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20eee908190a505ca8afe14de0e",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent5",
+    "response": {
+      "status_code": 200,
+      "request_id": "4b1a81bf-541a-491a-ba1b-fc4db8ea22dc",
+      "body": {
+        "id": "chatcmpl-DIbpVYwLOxnJzLJBjXQoQECESqaP3",
+        "object": "chat.completion",
+        "created": 1773327693,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 3}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2331,
+          "completion_tokens": 15,
+          "total_tokens": 2346,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_d9e3c0c55c"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20eee288190be3ebcb10d4603a6",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent6",
+    "response": {
+      "status_code": 200,
+      "request_id": "e0b1c493-a610-4c72-975b-8b42885ca0b4",
+      "body": {
+        "id": "chatcmpl-DIbpV2IcgjPZuazoVmjmXXw6uBAi4",
+        "object": "chat.completion",
+        "created": 1773327693,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2372,
+          "completion_tokens": 15,
+          "total_tokens": 2387,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f81308190ac207124ad720a26",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent7",
+    "response": {
+      "status_code": 200,
+      "request_id": "89001733-9f01-4c4a-a19e-2e5be7f52a17",
+      "body": {
+        "id": "chatcmpl-DIbpP3Kajh3D7ThjweA5GsdSDFHbo",
+        "object": "chat.completion",
+        "created": 1773327687,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 390,
+          "completion_tokens": 15,
+          "total_tokens": 405,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f01b08190b0e72e0dc2af995c",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent8",
+    "response": {
+      "status_code": 200,
+      "request_id": "c5c6f1a0-c41e-481f-a938-f81ef53277ea",
+      "body": {
+        "id": "chatcmpl-DIbpNKGRXsaDw1B7LOhGRxnyvoK6x",
+        "object": "chat.completion",
+        "created": 1773327685,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1127,
+          "completion_tokens": 15,
+          "total_tokens": 1142,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f1994819098bd330ba416923e",
+    "custom_id": "gpt-4o-mini-temp1_run1_sent9",
+    "response": {
+      "status_code": 200,
+      "request_id": "1a67bc7b-d0fa-49f2-ad34-5b563ffbefea",
+      "body": {
+        "id": "chatcmpl-DIbpC8CZmfMzWiaW1nckNZ25JIoQe",
+        "object": "chat.completion",
+        "created": 1773327674,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 371,
+          "completion_tokens": 15,
+          "total_tokens": 386,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_1c8bdaba3d"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20fe91c8190be9ee7e4a3a344d4",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent0",
+    "response": {
+      "status_code": 200,
+      "request_id": "cb415657-8895-4a73-80cf-e0a8b9d72fd0",
+      "body": {
+        "id": "chatcmpl-DIbpHk9W11hoFUTsl75b8ZVIThdQ5",
+        "object": "chat.completion",
+        "created": 1773327679,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 2}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f6aec8190ae0ee54961b1d26c",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent1",
+    "response": {
+      "status_code": 200,
+      "request_id": "96030c19-a6e9-45e9-b587-866d44b940ce",
+      "body": {
+        "id": "chatcmpl-DIcfw0960uiW4iqGuUQE7f5gz5S50",
+        "object": "chat.completion",
+        "created": 1773330944,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1486,
+          "completion_tokens": 15,
+          "total_tokens": 1501,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_d9e3c0c55c"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f7b5c819097f5a2d8a3f2ddaf",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent2",
+    "response": {
+      "status_code": 200,
+      "request_id": "3c6d4565-ac07-4b58-aec4-2f6c1cda98eb",
+      "body": {
+        "id": "chatcmpl-DIbpV9AgD8toJHJ2kQyb0hV7uzgrA",
+        "object": "chat.completion",
+        "created": 1773327693,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 2}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 334,
+          "completion_tokens": 15,
+          "total_tokens": 349,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_a1ddba3226"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f74288190988eb56a04b621e6",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent3",
+    "response": {
+      "status_code": 200,
+      "request_id": "7f42014c-8bd9-45c1-9030-d19b6ac0a5ef",
+      "body": {
+        "id": "chatcmpl-DIbpQawrBWQWRtZmG4tB7QJiRcow9",
+        "object": "chat.completion",
+        "created": 1773327688,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 559,
+          "completion_tokens": 15,
+          "total_tokens": 574,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_2989ea8a0f"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f75ec819099f2ed876f557239",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent4",
+    "response": {
+      "status_code": 200,
+      "request_id": "10a22c19-d802-488b-83d4-fd0c0bdf5647",
+      "body": {
+        "id": "chatcmpl-DIbpHLZFnuTtw7ppz8VvC2hAtOdtZ",
+        "object": "chat.completion",
+        "created": 1773327679,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 921,
+          "completion_tokens": 15,
+          "total_tokens": 936,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f840481909002036a633116bc",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent5",
+    "response": {
+      "status_code": 200,
+      "request_id": "b1b979d9-09f0-45ee-8944-4c43f92b377f",
+      "body": {
+        "id": "chatcmpl-DIbp9dKS7RWnlNifh8b39rDvpwGO1",
+        "object": "chat.completion",
+        "created": 1773327671,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2331,
+          "completion_tokens": 15,
+          "total_tokens": 2346,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_d9e3c0c55c"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f825c81908fceb27cf021a050",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent6",
+    "response": {
+      "status_code": 200,
+      "request_id": "58358013-f808-438e-9e60-1f6c9e165b5e",
+      "body": {
+        "id": "chatcmpl-DIbp9Hj98SxJcMiPSVB7mgijtaSnE",
+        "object": "chat.completion",
+        "created": 1773327671,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 4}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 2372,
+          "completion_tokens": 15,
+          "total_tokens": 2387,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f8b90819087b9daf533e1eedd",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent7",
+    "response": {
+      "status_code": 200,
+      "request_id": "fe1385dd-feae-4135-8fbc-389ac703cdc6",
+      "body": {
+        "id": "chatcmpl-DIbpDjedksYa6pGhWnBx8XSzTtaaS",
+        "object": "chat.completion",
+        "created": 1773327675,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 390,
+          "completion_tokens": 15,
+          "total_tokens": 405,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20f984c819089528abdfe36d883",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent8",
+    "response": {
+      "status_code": 200,
+      "request_id": "d6ce7189-b449-4118-b7b4-ce6dd66ec00c",
+      "body": {
+        "id": "chatcmpl-DIbpVukB8081RBm6dBg2cs35dRmQg",
+        "object": "chat.completion",
+        "created": 1773327693,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 1127,
+          "completion_tokens": 15,
+          "total_tokens": 1142,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_14deaefc59"
+      }
+    },
+    "error": null
+  },
+  {
+    "id": "batch_req_69b2e20ff33c8190957c86dd5991cb4b",
+    "custom_id": "gpt-4o-mini-temp1_run2_sent9",
+    "response": {
+      "status_code": 200,
+      "request_id": "ee784a2c-0a83-46a8-9224-e96aa693bfe7",
+      "body": {
+        "id": "chatcmpl-DIcfnVYlT7W1LXU008FaNULoVIwpF",
+        "object": "chat.completion",
+        "created": 1773330935,
+        "model": "gpt-4o-mini-2024-07-18",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "{\n  \"התיישבות\": {\"relevance\": 1}\n}",
+              "refusal": null,
+              "annotations": []
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 371,
+          "completion_tokens": 15,
+          "total_tokens": 386,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "audio_tokens": 0
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 0,
+            "audio_tokens": 0,
+            "accepted_prediction_tokens": 0,
+            "rejected_prediction_tokens": 0
+          }
+        },
+        "service_tier": "default",
+        "system_fingerprint": "fp_1c8bdaba3d"
+      }
+    },
+    "error": null
+  }
+]

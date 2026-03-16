@@ -91,5 +91,200 @@
       "batch_699802a2942c8190b730ef47947caca8"
     ],
     "score_completed_at": "2026-02-20T08:46:15.811002"
+  },
+  "23594_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69adca34e2808190b509d9caafb8eaef"
+    ],
+    "filter_completed_at": "2026-03-08T21:17:08.677445",
+    "score_batch_job_ids": [
+      "batch_69add4aaaad0819080a415b855936fb2"
+    ],
+    "score_completed_at": "2026-03-08T21:59:04.018973"
+  },
+  "23594_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69adca34e2808190b509d9caafb8eaef"
+    ],
+    "filter_completed_at": "2026-03-08T21:17:08.677445",
+    "score_batch_job_ids": [
+      "batch_69add4ad17a48190a64e8593bc988c00"
+    ],
+    "score_completed_at": "2026-03-08T21:59:02.832728"
+  },
+  "23594_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69adca34e2808190b509d9caafb8eaef"
+    ],
+    "filter_completed_at": "2026-03-08T21:17:08.677445",
+    "score_batch_job_ids": [
+      "batch_69add4abf6dc8190acb7394e2c1a3683"
+    ],
+    "score_completed_at": "2026-03-08T21:59:02.093626"
+  },
+  "23565_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13054f2848190bb7241e61d33c5c9"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:35.683500",
+    "score_batch_job_ids": [
+      "batch_69b131a72ee481908d4f48747d0bf7be"
+    ],
+    "score_completed_at": "2026-03-11T11:46:16.037821"
+  },
+  "23565_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13054f2848190bb7241e61d33c5c9"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:35.701722",
+    "score_batch_job_ids": [
+      "batch_69b131a977a081908fbaab4807c84741"
+    ],
+    "score_completed_at": "2026-03-11T11:46:34.188565"
+  },
+  "23565_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13054f2848190bb7241e61d33c5c9"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:35.707274",
+    "score_batch_job_ids": [
+      "batch_69b131b011fc8190a838f9c98576eb75"
+    ],
+    "score_completed_at": "2026-03-11T11:46:32.491872"
+  },
+  "2291_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b1305ea3008190abc04137f6a4520a"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:38.688663",
+    "score_batch_job_ids": [
+      "batch_69b131b51d188190b3ad151bad360a5d"
+    ],
+    "score_completed_at": "2026-03-11T11:46:18.309647"
+  },
+  "2291_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b1305ea3008190abc04137f6a4520a"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:38.688663",
+    "score_batch_job_ids": [
+      "batch_69b131b68ff88190a7c04d0cc7f0a716"
+    ],
+    "score_completed_at": "2026-03-11T11:46:19.460128"
+  },
+  "2291_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b1305ea3008190abc04137f6a4520a"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:38.699160",
+    "score_batch_job_ids": [
+      "batch_69b131b8c0b48190ad24b0ee949d49ed"
+    ],
+    "score_completed_at": "2026-03-11T11:46:30.606825"
+  },
+  "504_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13049bdbc8190bc1561b215efa33d"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:41.887256",
+    "score_batch_job_ids": [
+      "batch_69b1319ea9d8819086ce3d4bf7b94385"
+    ],
+    "score_completed_at": "2026-03-11T11:46:29.369565"
+  },
+  "504_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13049bdbc8190bc1561b215efa33d"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:41.888051",
+    "score_batch_job_ids": [
+      "batch_69b131a26ad881908b4223c6287a85d2"
+    ],
+    "score_completed_at": "2026-03-11T11:46:11.905768"
+  },
+  "504_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b13049bdbc8190bc1561b215efa33d"
+    ],
+    "filter_completed_at": "2026-03-11T11:10:41.888051",
+    "score_batch_job_ids": [
+      "batch_69b131a450788190ba4c17f9a9507a17"
+    ],
+    "score_completed_at": "2026-03-11T11:46:13.535359"
+  },
+  "12944_נישואים_אזרחיים": {
+    "status": "filter_complete",
+    "filter_batch_job_ids": [
+      "batch_69b258dbfef08190a95d2ec89e7882af"
+    ],
+    "filter_completed_at": "2026-03-12T08:14:06.050759",
+    "score_batch_job_ids": []
+  },
+  "12944_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b258dbfef08190a95d2ec89e7882af"
+    ],
+    "filter_completed_at": "2026-03-12T08:14:06.053272",
+    "score_batch_job_ids": [
+      "batch_69b259b10da88190970f360a142a7d91"
+    ],
+    "score_completed_at": "2026-03-12T08:16:43.907523"
+  },
+  "12944_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b258dbfef08190a95d2ec89e7882af"
+    ],
+    "filter_completed_at": "2026-03-12T08:14:06.054720",
+    "score_batch_job_ids": [
+      "batch_69b259b260ac8190b7b598c3248ad0b0"
+    ],
+    "score_completed_at": "2026-03-12T08:16:41.932390"
+  },
+  "30066_נישואים_אזרחיים": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b84688a06c8190b3983df7cc6f388c"
+    ],
+    "filter_completed_at": "2026-03-16T20:09:30.021999",
+    "score_batch_job_ids": [
+      "batch_69b8475ecf10819098eaf9045a8a4b44"
+    ],
+    "score_completed_at": "2026-03-16T20:11:05.820537"
+  },
+  "30066_התיישבות": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b84688a06c8190b3983df7cc6f388c"
+    ],
+    "filter_completed_at": "2026-03-16T20:09:30.024056",
+    "score_batch_job_ids": [
+      "batch_69b8475dcf508190b2387715177cb104"
+    ],
+    "score_completed_at": "2026-03-16T20:11:08.153723"
+  },
+  "30066_תחבורה_ציבורית_בשבת": {
+    "status": "score_complete",
+    "filter_batch_job_ids": [
+      "batch_69b84688a06c8190b3983df7cc6f388c"
+    ],
+    "filter_completed_at": "2026-03-16T20:09:30.026050",
+    "score_batch_job_ids": [
+      "batch_69b8475fe9348190a6a76ddc83b1a8a5"
+    ],
+    "score_completed_at": "2026-03-16T20:11:09.555192"
   }
 }

@@ -1,0 +1,27 @@
+{
+  "id": 30066,
+  "knessetSiteId": 30066,
+  "name": "איימן עודה",
+  "imageUrl": "",
+  "description": "Faction: הרשימה המשותפת (חד\"ש, רע\"מ, בל\"ד, תע\"ל), Party: הרשימה המשותפת",
+  "Topics": [
+    {
+      "topicName": "נישואים_אזרחיים",
+      "count": 3,
+      "average": 1.67,
+      "weighted_average": 2.03
+    },
+    {
+      "topicName": "התיישבות",
+      "count": 43,
+      "average": 1.77,
+      "weighted_average": 1.93
+    },
+    {
+      "topicName": "תחבורה_ציבורית_בשבת",
+      "count": 3,
+      "average": 4,
+      "weighted_average": 5.09
+    }
+  ]
+}

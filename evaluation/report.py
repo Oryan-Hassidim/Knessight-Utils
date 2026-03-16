@@ -187,42 +187,44 @@ def main():
         action="append",
         help="Bucket boundary set for scoring; comma-separated values (e.g. 3,7). Can be used multiple times.",
     )
+    
+    # Consistency generation flags
     parser.add_argument(
-        "--generate-consistency",
+        "--gen-score",
         action="store_true",
-        help="Generate consistency data by running models multiple times",
+        help="Generate score consistency data (1-10 stance scale)",
     )
     parser.add_argument(
-        "--consistency-dir",
-        default="evaluation/data/consistency",
-        help="Directory for consistency data (default: evaluation/data/consistency)",
+        "--gen-filter",
+        action="store_true",
+        help="Generate filter consistency data (1-5 relevance scale)",
     )
     parser.add_argument(
-        "--consistency-runs",
-        type=int,
-        default=3,
-        help="Number of runs per model for consistency generation (default: 3)",
-    )
-    parser.add_argument(
-        "--consistency-sentences",
+        "-n", "--sentences",
         type=int,
         default=100,
-        help="Number of sentences to score for consistency testing (default: 100)",
+        help="Number of sentences to process for consistency (default: 100)",
     )
     parser.add_argument(
-        "--consistency-topic",
+        "-r", "--runs",
+        type=int,
+        default=3,
+        help="Number of runs per model (default: 3)",
+    )
+    parser.add_argument(
+        "-t", "--topic",
         default="התיישבות",
         help="Topic name for consistency testing (default: התיישבות)",
     )
     parser.add_argument(
-        "--generate-filter-consistency",
-        action="store_true",
-        help="Generate filter consistency data by running filter models multiple times",
+        "--score-dir",
+        default="evaluation/data/consistency",
+        help="Output directory for score consistency (default: evaluation/data/consistency)",
     )
     parser.add_argument(
-        "--filter-consistency-dir",
+        "--filter-dir",
         default="evaluation/data/filter_consistency",
-        help="Directory for filter consistency data (default: evaluation/data/filter_consistency)",
+        help="Output directory for filter consistency (default: evaluation/data/filter_consistency)",
     )
     parser.add_argument(
         "--filter-threshold",
@@ -233,7 +235,7 @@ def main():
     parser.add_argument(
         "--plot-consistency",
         action="store_true",
-        help="Generate all consistency plots from existing data (both filter and score)",
+        help="Plot consistency results from existing data (both filter and score)",
     )
     args = parser.parse_args()
 
@@ -251,24 +253,26 @@ def main():
         path = data_dir / "score_gold.xlsx"
         run_score_eval(path, save_dir, args.plot, args.show, bucket_configs)
 
-    if args.generate_consistency:
-        # generate consistency data
-        from .methods.generate_consistency_data import generate_consistency_data
+    if args.gen_score:
+        # generate score consistency data
+        from .methods.generate_consistency_data_unified import generate_consistency_data
         generate_consistency_data(
-            Path(args.consistency_dir), 
-            n_runs=args.consistency_runs,
-            n_sentences=args.consistency_sentences,
-            topic=args.consistency_topic
+            mode="score",
+            output_dir=Path(args.score_dir), 
+            n_runs=args.runs,
+            n_sentences=args.sentences,
+            topic=args.topic
         )
 
-    if args.generate_filter_consistency:
+    if args.gen_filter:
         # generate filter consistency data
-        from .methods.generate_filter_consistency_data import generate_filter_consistency_data
-        generate_filter_consistency_data(
-            Path(args.filter_consistency_dir), 
-            n_runs=args.consistency_runs,
-            n_sentences=args.consistency_sentences,
-            topic=args.consistency_topic
+        from .methods.generate_consistency_data_unified import generate_consistency_data
+        generate_consistency_data(
+            mode="filter",
+            output_dir=Path(args.filter_dir), 
+            n_runs=args.runs,
+            n_sentences=args.sentences,
+            topic=args.topic
         )
 
     if args.plot_consistency:
@@ -277,8 +281,8 @@ def main():
         output_dir = save_dir or Path("evaluation/results")
         bucket_boundaries = bucket_configs[0] if bucket_configs else None
         plot_all_consistency(
-            filter_data_dir=Path(args.filter_consistency_dir),
-            score_data_dir=Path(args.consistency_dir),
+            filter_data_dir=Path(args.filter_dir),
+            score_data_dir=Path(args.score_dir),
             output_dir=output_dir,
             show=args.show,
             filter_threshold=args.filter_threshold,

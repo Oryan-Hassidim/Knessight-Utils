@@ -1,0 +1,149 @@
+
+======================================================================
+FILTER CONSISTENCY ANALYSIS
+Binary relevance threshold: 4.0
+======================================================================
+
+======================================================================
+PART 1: BINARY DECISION CONSISTENCY
+======================================================================
+How stable are relevance decisions (relevant vs. not-relevant)?
+
+------------------------------------------------------------
+Model: gpt-4o-mini-temp1
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Binary decision stability:
+  Perfect agreement (all runs identical): 10/10 (100.0%)
+    → Model always makes the same decision
+  Split decisions: 0/10 (0.0%)
+    → Model sometimes changes its mind about relevance
+  Mean agreement rate: 100.0%
+    → On average, what % of runs agree on the decision
+
+------------------------------------------------------------
+Model: gpt-4o-mini
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Binary decision stability:
+  Perfect agreement (all runs identical): 10/10 (100.0%)
+    → Model always makes the same decision
+  Split decisions: 0/10 (0.0%)
+    → Model sometimes changes its mind about relevance
+  Mean agreement rate: 100.0%
+    → On average, what % of runs agree on the decision
+
+------------------------------------------------------------
+Model: gpt-4o
+------------------------------------------------------------
+Runs: 3, Sentences: 10
+
+Binary decision stability:
+  Perfect agreement (all runs identical): 10/10 (100.0%)
+    → Model always makes the same decision
+  Split decisions: 0/10 (0.0%)
+    → Model sometimes changes its mind about relevance
+  Mean agreement rate: 100.0%
+    → On average, what % of runs agree on the decision
+
+
+======================================================================
+PART 2: INTRA-MODEL SCORE CONSISTENCY (same model, multiple runs)
+======================================================================
+How much do relevance scores vary across runs?
+
+------------------------------------------------------------
+Model: gpt-4o-mini-temp1
+------------------------------------------------------------
+
+Score variability (relevance 1-5 scale):
+  Mean std dev: 0.1155
+    → Average inconsistency per sentence. Lower is better.
+  Median std dev: 0.0000
+  Max std dev: 0.5774
+  Mean coefficient of variation: 5.57%
+    → Variability relative to score magnitude.
+
+Most variable sentence (std=0.577, CV=12.4%):
+  'אדוני השר, חלק מהתפקיד שהיית אמון עליו זה טיפול ביישובי הקבע למפוני גוש-קטיף וצפון השומרון. ואני תמה...'
+  Scores: ['4.0', '5.0', '5.0']
+  Range: 4.0 - 5.0
+
+Sentences with high variability (std>0.5 or CV>20%): 2/10 (20.0%)
+  - std=0.577, CV=12.4%: 'אדוני השר, חלק מהתפקיד שהיית אמון עליו זה טיפול בי...'
+  - std=0.577, CV=43.3%: 'יש לי הצעה לסדר. 34 שרים זה – – –...'
+
+------------------------------------------------------------
+Model: gpt-4o-mini
+------------------------------------------------------------
+
+Score variability (relevance 1-5 scale):
+  Mean std dev: 0.0577
+    → Average inconsistency per sentence. Lower is better.
+  Median std dev: 0.0000
+  Max std dev: 0.5774
+  Mean coefficient of variation: 1.33%
+    → Variability relative to score magnitude.
+
+Most variable sentence (std=0.577, CV=13.3%):
+  'אדוני השר, חלק מהתפקיד שהיית אמון עליו זה טיפול ביישובי הקבע למפוני גוש-קטיף וצפון השומרון. ואני תמה...'
+  Scores: ['4.0', '4.0', '5.0']
+  Range: 4.0 - 5.0
+
+Sentences with high variability (std>0.5 or CV>20%): 1/10 (10.0%)
+  - std=0.577, CV=13.3%: 'אדוני השר, חלק מהתפקיד שהיית אמון עליו זה טיפול בי...'
+
+------------------------------------------------------------
+Model: gpt-4o
+------------------------------------------------------------
+
+Score variability (relevance 1-5 scale):
+  Mean std dev: 0.0577
+    → Average inconsistency per sentence. Lower is better.
+  Median std dev: 0.0000
+  Max std dev: 0.5774
+  Mean coefficient of variation: 2.17%
+    → Variability relative to score magnitude.
+
+Most variable sentence (std=0.577, CV=21.7%):
+  'אדוני היושב-ראש, הגיע השר יוסי פלד, ומכיוון שהגיע אלוף פיקוד צפון, אני אפתח במצביא אחר, בנפוליאון. נ...'
+  Scores: ['2.0', '3.0', '3.0']
+  Range: 2.0 - 3.0
+
+Sentences with high variability (std>0.5 or CV>20%): 1/10 (10.0%)
+  - std=0.577, CV=21.7%: 'אדוני היושב-ראש, הגיע השר יוסי פלד, ומכיוון שהגיע ...'
+
+
+======================================================================
+PART 3: INTER-MODEL CONSISTENCY (different models on same data)
+======================================================================
+
+Pairwise correlations (Pearson):
+  gpt-4o vs gpt-4o-mini: r = 0.964 (p=0.0000)
+  gpt-4o vs gpt-4o-mini-temp1: r = 0.963 (p=0.0000)
+  gpt-4o-mini vs gpt-4o-mini-temp1: r = 0.996 (p=0.0000)
+  → r measures how similarly models rank sentences.
+
+Mean absolute difference between models:
+  gpt-4o vs gpt-4o-mini: MAD = 0.167
+  gpt-4o vs gpt-4o-mini-temp1: MAD = 0.233
+  gpt-4o-mini vs gpt-4o-mini-temp1: MAD = 0.067
+  → Average point difference on 1-5 scale.
+
+Binary decision agreement (threshold=4.0):
+  gpt-4o vs gpt-4o-mini: 90.0% agree on relevance
+  gpt-4o vs gpt-4o-mini-temp1: 90.0% agree on relevance
+  gpt-4o-mini vs gpt-4o-mini-temp1: 100.0% agree on relevance
+  → What % of sentences get the same binary decision.
+
+Cross-model variability:
+  Mean std dev across models: 0.130
+  Mean range across models: 0.233
+
+Most disagreed sentence (std=0.770):
+  'אדוני היושב-ראש, הגיע השר יוסי פלד, ומכיוון שהגיע אלוף פיקוד צפון, אני אפתח במצביא אחר, בנפוליאון. נ...'
+    gpt-4o: 2.67
+    gpt-4o-mini: 4.00
+    gpt-4o-mini-temp1: 4.00
