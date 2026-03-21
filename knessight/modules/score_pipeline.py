@@ -298,6 +298,8 @@ Respond with JSON only, format:
                     if not metadata:
                         continue
 
+                    meeting_topic = metadata.get("topic") or topic
+
                     # Load speech text from intermediate file # TODO: optimize by caching CSV contents per person_id/topic
                     csv_path = (
                         self.intermediate_dir / f"{person_id}_{topic}_filtered.csv"
@@ -308,7 +310,7 @@ Respond with JSON only, format:
                         {
                             "Id": speech_id,
                             "Date": metadata["date"],
-                            "Topic": topic,
+                            "Topic": meeting_topic,
                             "Text": speech_text,
                             "Rank": stance_score,
                             "Reasoning": (
