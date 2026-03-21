@@ -207,9 +207,6 @@ def score(
             client_data_dir=Path(config.CLIENT_DATA_PATH),
         )
         score_pipeline.run(pending_pairs, reasoning_rate)
-
-        # Generate mks.csv
-        output_manager.generate_mks_csv(list(resolved_mks.values()))
         
         # Export consolidated scores CSV
         output_manager.export_all_scores_csv()

@@ -34,9 +34,54 @@ class OutputManager:
         self.client_data_dir = Path(client_data_dir)
         self.mk_data_dir = self.client_data_dir / "mk_data"
         self.topics_dir = self.client_data_dir / "topics"
+        self.mks_csv_path = self.client_data_dir / "mks.csv"
+        self._mks_metadata = self._load_mks_metadata_from_csv()
 
         self.mk_data_dir.mkdir(parents=True, exist_ok=True)
         self.topics_dir.mkdir(parents=True, exist_ok=True)
+
+    def _load_mks_metadata_from_csv(self) -> Dict[int, Dict[str, str]]:
+        """Load MK metadata from client_data/mks.csv.
+
+        Returns:
+            Mapping of person_id to metadata fields from CSV.
+        """
+        metadata_by_id: Dict[int, Dict[str, str]] = {}
+
+        if not self.mks_csv_path.exists():
+            self.console.print(
+                f"[yellow]mks.csv not found at {self.mks_csv_path}; continuing without CSV metadata[/yellow]"
+            )
+            return metadata_by_id
+
+        try:
+            with open(self.mks_csv_path, "r", newline="", encoding="utf-8-sig") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    id_value = (row.get("id") or row.get("knesset site id") or "").strip()
+                    if not id_value:
+                        continue
+
+                    try:
+                        person_id = int(id_value)
+                    except ValueError:
+                        continue
+
+                    first_name = (row.get("first name") or "").strip()
+                    last_name = (row.get("last name") or "").strip()
+                    csv_name = " ".join(part for part in [first_name, last_name] if part)
+
+                    metadata_by_id[person_id] = {
+                        "name": csv_name,
+                        "image_url": (row.get("image url") or "").strip(),
+                    }
+
+        except Exception as e:
+            self.console.print(
+                f"[yellow]Warning: Could not read mks.csv at {self.mks_csv_path}: {e}[/yellow]"
+            )
+
+        return metadata_by_id
 
     def update_aggregations(
         self, person_id: int, topic: str, scored_speeches: List[Dict]
@@ -153,11 +198,15 @@ class OutputManager:
                 )
                 return
 
+            csv_metadata = self._mks_metadata.get(person_id, {})
+            name = csv_metadata.get("name") or metadata["name"]
+            image_url = csv_metadata.get("image_url", "")
+
             data = {
                 "id": person_id,
                 "knessetSiteId": person_id,
-                "name": metadata["name"],
-                "imageUrl": "",  # TODO: get it fromn mks.csv, the images there...
+                "name": name,
+                "imageUrl": image_url,
                 "description": f"Faction: {metadata.get('faction', 'N/A')}, Party: {metadata.get('party_name', 'N/A')}",
                 "Topics": [],
             }
@@ -213,46 +262,6 @@ class OutputManager:
         # Save
         with open(json_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-
-    # TODO: delete this, we dont need it.
-    def generate_mks_csv(self, person_ids: List[int]):
-        """Generate mks.csv from database.
-
-        Args:
-            person_ids: List of person_ids to include
-        """
-        csv_path = self.client_data_dir / "mks.csv"
-
-        rows = []
-        for person_id in person_ids:
-            metadata = self.database.get_person_metadata(person_id)
-            if metadata:
-                rows.append(
-                    {
-                        "id": person_id,
-                        "first name": metadata["first_name"],
-                        "last name": metadata["surname"],
-                        "knesset site id": person_id,
-                        "image url": "",  # Empty initially
-                    }
-                )
-
-        with open(csv_path, "w", newline="", encoding="utf-8") as f:
-            if rows:
-                writer = csv.DictWriter(
-                    f,
-                    fieldnames=[
-                        "id",
-                        "first name",
-                        "last name",
-                        "knesset site id",
-                        "image url",
-                    ],
-                )
-                writer.writeheader()
-                writer.writerows(rows)
-
-        self.console.print(f"[green]Generated mks.csv with {len(rows)} MKs[/green]")
 
     def export_all_scores_csv(self):
         """Export all MK scores to a consolidated CSV.
