@@ -1,5 +1,6 @@
 """Command-line interface for Knessight pipeline."""
 
+import hashlib
 from pathlib import Path
 from typing import Optional
 import typer
@@ -26,6 +27,18 @@ app = typer.Typer(
 )
 
 console = Console()
+
+
+def _file_sha256(path: Path) -> Optional[str]:
+    """Compute SHA256 hash for a file, or None if it doesn't exist."""
+    if not path.exists():
+        return None
+
+    hasher = hashlib.sha256()
+    with open(path, "rb") as f:
+        for chunk in iter(lambda: f.read(8192), b""):
+            hasher.update(chunk)
+    return hasher.hexdigest()
 
 
 def load_topics_from_file(file_path: Path) -> list[str]:
@@ -175,6 +188,8 @@ def score(
         mk_names = disambiguation.load_mk_list_from_file(mks_file)
         resolved_mks = disambiguation.resolve_mk_names(mk_names)
         topics = load_topics_from_file(topics_file)
+        mks_csv_path = Path(config.CLIENT_DATA_PATH) / "mks.csv"
+        mks_csv_hash_before = _file_sha256(mks_csv_path)
 
         # Generate all pairs
         all_pairs = [
@@ -210,6 +225,13 @@ def score(
         
         # Export consolidated scores CSV
         output_manager.export_all_scores_csv()
+
+        mks_csv_hash_after = _file_sha256(mks_csv_path)
+        if mks_csv_hash_before != mks_csv_hash_after:
+            raise RuntimeError(
+                f"mks.csv changed during score flow: {mks_csv_path}. "
+                "This file must stay static/read-only."
+            )
 
         console.print("\n[bold green]Score pipeline complete![/bold green]")
 

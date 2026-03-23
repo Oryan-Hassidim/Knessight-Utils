@@ -1,7 +1,626 @@
 id,first name,last name,knesset site id,image url
-30708,מאי,גולן,30708,
-30055,בצלאל,סמוטריץ',30055,
-23594,יאיר,לפיד,23594,
-2291,אריה מכלוף,דרעי,2291,
-12944,דני,דנון,12944,
-30066,איימן,עודה,30066,
+2312,חיים,הרצוג,391,https://fs.knesset.gov.il/globaldocs/MK/391/1_391_3_914.jpeg
+2652,יצחק,שמיר,175,https://fs.knesset.gov.il/globaldocs/MK/175/1_175_3_440.jpeg
+2595,יצחק,רבין,168,https://fs.knesset.gov.il/globaldocs/MK/168/1_168_3_426.jpeg
+458,חיים,רמון,115,https://fs.knesset.gov.il/globaldocs/MK/115/1_115_3_317.jpeg
+2524,עובדיה,עלי,161,https://fs.knesset.gov.il/globaldocs/MK/161/1_161_3_412.jpeg
+471,עוזי,לנדאו,77,https://fs.knesset.gov.il/globaldocs/MK/77/1_77_3_213.jpeg
+2316,אריאל,ויינשטיין,144,https://fs.knesset.gov.il/globaldocs/MK/144/1_144_3_380.jpeg
+2642,דב,שילנסקי,173,https://fs.knesset.gov.il/globaldocs/MK/173/1_173_3_436.jpeg
+2465,חגי,מירום,84,https://fs.knesset.gov.il/globaldocs/MK/84/1_84_3_233.jpeg
+2286,עבד-אלוהב,דראושה,40,https://fs.knesset.gov.il/globaldocs/MK/40/1_40_3_106.jpeg
+2672,דן,תיכון,128,https://fs.knesset.gov.il/globaldocs/MK/128/1_128_3_348.jpeg
+2143,שולמית,אלוני,132,https://fs.knesset.gov.il/globaldocs/MK/132/1_132_3_356.jpeg
+2574,אביגדור,קהלני,108,https://fs.knesset.gov.il/globaldocs/MK/108/1_108_3_301.jpeg
+482,אריאל,שרון,125,https://fs.knesset.gov.il/globaldocs/MK/125/1_125_3_342.jpeg
+507,רן,כהן,66,https://fs.knesset.gov.il/globaldocs/MK/66/1_66_3_183.jpeg
+2633,משה,שחל,118,https://fs.knesset.gov.il/globaldocs/MK/118/1_118_3_323.jpeg
+437,אלי,בן-מנחם,22,https://fs.knesset.gov.il/globaldocs/MK/22/1_22_3_64.jpeg
+2562,וליד,צאדק חאג'-יחיא,106,https://fs.knesset.gov.il/globaldocs/MK/106/1_106_3_297.jpeg
+2138,רפאל,איתן,10,https://fs.knesset.gov.il/globaldocs/MK/10/1_10_3_32.jpeg
+536,דוד,לוי,72,https://fs.knesset.gov.il/globaldocs/MK/72/1_72_3_202.jpeg
+862,משה,קצב,110,https://fs.knesset.gov.il/globaldocs/MK/110/1_110_3_305.jpeg
+478,מאיר,שטרית,119,https://fs.knesset.gov.il/globaldocs/MK/119/1_119_3_326.jpeg
+2300,זבולון,המר,44,https://fs.knesset.gov.il/globaldocs/MK/44/1_44_3_117.jpeg
+2566,דוד,צוקר,107,https://fs.knesset.gov.il/globaldocs/MK/107/1_107_3_299.jpeg
+1065,חיים,אורון,5,https://fs.knesset.gov.il/globaldocs/MK/5/1_5_3_15.jpeg
+441,יעל,דיין,39,https://fs.knesset.gov.il/globaldocs/MK/39/1_39_3_104.jpeg
+965,בנימין,נתניהו,90,https://fs.knesset.gov.il/globaldocs/MK/90/1_90_3_248.jpeg
+434,אברהם,בורג,137,https://fs.knesset.gov.il/globaldocs/MK/137/1_137_3_366.jpeg
+2559,יצחק-חיים,פרץ,163,https://fs.knesset.gov.il/globaldocs/MK/163/1_163_3_416.jpeg
+2563,יאיר,צבן,165,https://fs.knesset.gov.il/globaldocs/MK/165/1_165_3_420.jpeg
+557,עמיר,פרץ,105,https://fs.knesset.gov.il/globaldocs/MK/105/1_105_3_292.jpeg
+2334,תופיק,זיאד,147,https://fs.knesset.gov.il/globaldocs/MK/147/1_147_3_386.jpeg
+2238,מיכה,גולדמן,32,https://fs.knesset.gov.il/globaldocs/MK/32/1_32_3_85.jpeg
+2482,רון,נחמן,157,https://fs.knesset.gov.il/globaldocs/MK/157/1_157_3_404.jpeg
+417,רחבעם,זאבי,51,https://fs.knesset.gov.il/globaldocs/MK/51/1_51_3_141.jpeg
+2291,אריה מכלוף,דרעי,41,https://fs.knesset.gov.il/globaldocs/MK/41/1_41_3_110.jpeg
+454,אפרים,סנה,94,https://fs.knesset.gov.il/globaldocs/MK/94/1_94_3_265.jpeg
+462,מיכאל,איתן,9,https://fs.knesset.gov.il/globaldocs/MK/9/1_9_3_30.jpeg
+2178,זאב בנימין,בגין,14,https://fs.knesset.gov.il/globaldocs/MK/14/1_14_3_43.jpeg
+472,יהושע,מצא,86,https://fs.knesset.gov.il/globaldocs/MK/86/1_86_3_237.jpeg
+2432,דוד,ליבאי,75,https://fs.knesset.gov.il/globaldocs/MK/75/1_75_3_208.jpeg
+2649,יעקב,שמאי,174,https://fs.knesset.gov.il/globaldocs/MK/174/1_174_3_438.jpeg
+435,בנימין,בן-אליעזר,20,https://fs.knesset.gov.il/globaldocs/MK/20/1_20_3_59.jpeg
+861,עוזי,ברעם,27,https://fs.knesset.gov.il/globaldocs/MK/27/1_27_3_74.jpeg
+2357,מיכאל,חריש,149,https://fs.knesset.gov.il/globaldocs/MK/149/1_149_3_390.jpeg
+2487,אורה,נמיר,158,https://fs.knesset.gov.il/globaldocs/MK/158/1_158_3_406.jpeg
+456,שמעון,פרס,104,https://fs.knesset.gov.il/globaldocs/MK/104/1_104_3_288.jpeg
+2568,יעקב,צור,587,https://fs.knesset.gov.il/globaldocs/MK/587/1_587_3_1304.jpeg
+2583,ישראל,קיסר,167,https://fs.knesset.gov.il/globaldocs/MK/167/1_167_3_424.jpeg
+510,אמנון,רובינשטיין,113,https://fs.knesset.gov.il/globaldocs/MK/113/1_113_3_311.jpeg
+459,אברהם-בייגה,שוחט,117,https://fs.knesset.gov.il/globaldocs/MK/117/1_117_3_321.jpeg
+2634,שמעון,שטרית,172,https://fs.knesset.gov.il/globaldocs/MK/172/1_172_3_434.jpeg
+2577,חיים,קופמן,166,https://fs.knesset.gov.il/globaldocs/MK/166/1_166_3_422.jpeg
+522,יגאל,ביבי,17,https://fs.knesset.gov.il/globaldocs/MK/17/1_17_3_52.jpeg
+765,יצחק,לוי,73,https://fs.knesset.gov.il/globaldocs/MK/73/1_73_3_204.jpeg
+567,אליעזר,זנדברג,54,https://fs.knesset.gov.il/globaldocs/MK/54/1_54_3_147.jpeg
+551,האשם,מחאמיד,83,https://fs.knesset.gov.il/globaldocs/MK/83/1_83_3_231.jpeg
+524,שאול,יהלום,61,https://fs.knesset.gov.il/globaldocs/MK/61/1_61_3_161.jpeg
+467,צחי,הנגבי,45,https://fs.knesset.gov.il/globaldocs/MK/45/1_45_3_121.jpeg
+1064,אהוד,אולמרט,3,https://fs.knesset.gov.il/globaldocs/MK/3/1_3_3_11.jpeg
+531,אברהם,רביץ,112,https://fs.knesset.gov.il/globaldocs/MK/112/1_112_3_309.jpeg
+2445,יורם,לס,153,https://fs.knesset.gov.il/globaldocs/MK/153/1_153_3_396.jpeg
+2538,משה,פלד,101,https://fs.knesset.gov.il/globaldocs/MK/101/1_101_3_280.jpeg
+2623,גדעון,שגיא,171,https://fs.knesset.gov.il/globaldocs/MK/171/1_171_3_432.jpeg
+2246,אפרים,גור,141,https://fs.knesset.gov.il/globaldocs/MK/141/1_141_3_374.jpeg
+2467,דוד,מנע,156,https://fs.knesset.gov.il/globaldocs/MK/156/1_156_3_402.jpeg
+860,אלי,גולדשמידט,33,https://fs.knesset.gov.il/globaldocs/MK/33/1_33_3_87.jpeg
+444,אברהם,יחזקאל,62,https://fs.knesset.gov.il/globaldocs/MK/62/1_62_3_163.jpeg
+541,תמר,גוז'נסקי,31,https://fs.knesset.gov.il/globaldocs/MK/31/1_31_3_83.jpeg
+2532,חנן,פורת,99,https://fs.knesset.gov.il/globaldocs/MK/99/1_99_3_276.jpeg
+2447,משה,מאיה,154,https://fs.knesset.gov.il/globaldocs/MK/154/1_154_3_398.jpeg
+446,רענן,כהן,67,https://fs.knesset.gov.il/globaldocs/MK/67/1_67_3_185.jpeg
+453,נואף,מסאלחה,85,https://fs.knesset.gov.il/globaldocs/MK/85/1_85_3_235.jpeg
+470,לימור,לבנת,70,https://fs.knesset.gov.il/globaldocs/MK/70/1_70_3_197.jpeg
+2339,עמנואל,זיסמן,53,https://fs.knesset.gov.il/globaldocs/MK/53/1_53_3_145.jpeg
+466,אברהם,הירשזון,42,https://fs.knesset.gov.il/globaldocs/MK/42/1_42_3_113.jpeg
+519,אברהם,פורז,98,https://fs.knesset.gov.il/globaldocs/MK/98/1_98_3_274.jpeg
+2622,גונן,שגב,170,https://fs.knesset.gov.il/globaldocs/MK/170/1_170_3_430.jpeg
+2276,חיים,דיין,38,https://fs.knesset.gov.il/globaldocs/MK/38/1_38_3_102.jpeg
+2183,פיני,בדש,15,https://fs.knesset.gov.il/globaldocs/MK/15/1_15_3_48.jpeg
+484,שלמה,בניזרי,25,https://fs.knesset.gov.il/globaldocs/MK/25/1_25_3_70.jpeg
+479,סילבן,שלום,122,https://fs.knesset.gov.il/globaldocs/MK/122/1_122_3_334.jpeg
+2526,שאול,עמור,97,https://fs.knesset.gov.il/globaldocs/MK/97/1_97_3_272.jpeg
+2186,שלמה,בוחבוט,136,https://fs.knesset.gov.il/globaldocs/MK/136/1_136_3_364.jpeg
+2275,אלי,דיין,143,https://fs.knesset.gov.il/globaldocs/MK/143/1_143_3_378.jpeg
+442,סאלח,טריף,59,https://fs.knesset.gov.il/globaldocs/MK/59/1_59_3_157.jpeg
+2157,אסעד,אסעד,133,https://fs.knesset.gov.il/globaldocs/MK/133/1_133_3_358.jpeg
+527,שמואל,הלפרט,43,https://fs.knesset.gov.il/globaldocs/MK/43/1_43_3_115.jpeg
+2125,אהוד,אבריאל,239,https://fs.knesset.gov.il/globaldocs/MK/239/1_239_3_612.jpeg
+549,טלב,אלסאנע,13,https://fs.knesset.gov.il/globaldocs/MK/13/1_13_3_39.jpeg
+2331,נסים,זוילי,52,https://fs.knesset.gov.il/globaldocs/MK/52/1_52_3_143.jpeg
+2236,שאול,גוטמן,138,https://fs.knesset.gov.il/globaldocs/MK/138/1_138_3_368.jpeg
+2247,מרדכי,גור,140,https://fs.knesset.gov.il/globaldocs/MK/140/1_140_3_372.jpeg
+2560,גדעון,פת,164,https://fs.knesset.gov.il/globaldocs/MK/164/1_164_3_418.jpeg
+433,דליה,איציק,8,https://fs.knesset.gov.il/globaldocs/MK/8/1_8_3_27.jpeg
+2366,בנימין,טמקין,150,https://fs.knesset.gov.il/globaldocs/MK/150/1_150_3_392.jpeg
+2489,משה,נסים,159,https://fs.knesset.gov.il/globaldocs/MK/159/1_159_3_408.jpeg
+506,נעמי,חזן,56,https://fs.knesset.gov.il/globaldocs/MK/56/1_56_3_151.jpeg
+2522,יוסף,עזרן,162,https://fs.knesset.gov.il/globaldocs/MK/162/1_162_3_414.jpeg
+2239,אלכס,גולדפרב,139,https://fs.knesset.gov.il/globaldocs/MK/139/1_139_3_370.jpeg
+2141,רפאל,אלול,11,https://fs.knesset.gov.il/globaldocs/MK/11/1_11_3_34.jpeg
+2620,אבנר-חי,שאקי,116,https://fs.knesset.gov.il/globaldocs/MK/116/1_116_3_319.jpeg
+2507,אסתר,סלמוביץ,160,https://fs.knesset.gov.il/globaldocs/MK/160/1_160_3_410.jpeg
+545,רוני,מילוא,155,https://fs.knesset.gov.il/globaldocs/MK/155/1_155_3_400.jpeg
+447,יוסי,כץ,68,https://fs.knesset.gov.il/globaldocs/MK/68/1_68_3_187.jpeg
+465,נעמי,בלומנטל,19,https://fs.knesset.gov.il/globaldocs/MK/19/1_19_3_56.jpeg
+2254,גדליה,גל,142,https://fs.knesset.gov.il/globaldocs/MK/142/1_142_3_376.jpeg
+2421,מאשה,לובלסקי,152,https://fs.knesset.gov.il/globaldocs/MK/152/1_152_3_394.jpeg
+584,שמואל,אביטל,130,https://fs.knesset.gov.il/globaldocs/MK/130/1_130_3_352.jpeg
+2175,יוסף,בא-גד,135,https://fs.knesset.gov.il/globaldocs/MK/135/1_135_3_362.jpeg
+2545,רפאל,פנחסי,102,https://fs.knesset.gov.il/globaldocs/MK/102/1_102_3_282.jpeg
+509,ענת,מאור,80,https://fs.knesset.gov.il/globaldocs/MK/80/1_80_3_225.jpeg
+2196,אליהו,בן-אלישר,21,https://fs.knesset.gov.il/globaldocs/MK/21/1_21_3_62.jpeg
+512,יוסי,שריד,126,https://fs.knesset.gov.il/globaldocs/MK/126/1_126_3_344.jpeg
+2132,אורי,אור,4,https://fs.knesset.gov.il/globaldocs/MK/4/1_4_3_13.jpeg
+486,אריה,גמליאל,34,https://fs.knesset.gov.il/globaldocs/MK/34/1_34_3_89.jpeg
+2660,אברהם,שפירא,177,https://fs.knesset.gov.il/globaldocs/MK/177/1_177_3_444.jpeg
+2549,מנחם,פרוש,686,https://fs.knesset.gov.il/globaldocs/MK/686/1_686_3_1498.jpeg
+2658,יעקב,שפי,176,https://fs.knesset.gov.il/globaldocs/MK/176/1_176_3_442.jpeg
+546,דן,מרידור,88,https://fs.knesset.gov.il/globaldocs/MK/88/1_88_3_242.jpeg
+544,דוד,מגן,82,https://fs.knesset.gov.il/globaldocs/MK/82/1_82_3_229.jpeg
+2192,יוסי,ביילין,18,https://fs.knesset.gov.il/globaldocs/MK/18/1_18_3_54.jpeg
+460,ויצמן,שירי,205,https://fs.knesset.gov.il/globaldocs/MK/205/1_205_3_510.jpeg
+526,משה,גפני,35,https://fs.knesset.gov.il/globaldocs/MK/35/1_35_3_93.jpeg
+2505,סאלח,סלים,93,https://fs.knesset.gov.il/globaldocs/MK/93/1_93_3_263.jpeg
+2413,אברהם,כץ-עוז,465,https://fs.knesset.gov.il/globaldocs/MK/465/1_465_3_1062.jpeg
+2346,חנא,חדאד,148,https://fs.knesset.gov.il/globaldocs/MK/148/1_148_3_388.jpeg
+2226,אהוד,ברק,28,https://fs.knesset.gov.il/globaldocs/MK/28/1_28_3_77.jpeg
+2135,יוסף,אחימאיר,131,https://fs.knesset.gov.il/globaldocs/MK/131/1_131_3_354.jpeg
+2164,נאוה,ארד,134,https://fs.knesset.gov.il/globaldocs/MK/134/1_134_3_360.jpeg
+1029,מיכאל,רצון,169,https://fs.knesset.gov.il/globaldocs/MK/169/1_169_3_428.jpeg
+430,יורי,שטרן,121,https://fs.knesset.gov.il/globaldocs/MK/121/1_121_3_331.jpeg
+474,גדעון,עזרא,96,https://fs.knesset.gov.il/globaldocs/MK/96/1_96_3_270.jpeg
+2307,יהודה,הראל,47,https://fs.knesset.gov.il/globaldocs/MK/47/1_47_3_128.jpeg
+405,בנימין,אלון,12,https://fs.knesset.gov.il/globaldocs/MK/12/1_12_3_36.jpeg
+563,מאיר,פרוש,103,https://fs.knesset.gov.il/globaldocs/MK/103/1_103_3_285.jpeg
+2468,יצחק,מרדכי,87,https://fs.knesset.gov.il/globaldocs/MK/87/1_87_3_239.jpeg
+500,אליהו,סויסה,226,https://fs.knesset.gov.il/globaldocs/MK/226/1_226_3_581.jpeg
+535,נתן,שרנסקי,127,https://fs.knesset.gov.il/globaldocs/MK/127/1_127_3_346.jpeg
+494,אליהו,ישי,63,https://fs.knesset.gov.il/globaldocs/MK/63/1_63_3_166.jpeg
+532,יולי יואל,אדלשטיין,1,https://fs.knesset.gov.il/globaldocs/MK/1/1_1_3_4.jpeg
+493,דוד,טל,58,https://fs.knesset.gov.il/globaldocs/MK/58/1_58_3_155.jpeg
+537,מקסים,לוי,74,https://fs.knesset.gov.il/globaldocs/MK/74/1_74_3_206.jpeg
+558,עזמי,בשארה,29,https://fs.knesset.gov.il/globaldocs/MK/29/1_29_3_79.jpeg
+550,עבד-אלמאלכ,דהאמשה,36,https://fs.knesset.gov.il/globaldocs/MK/36/1_36_3_98.jpeg
+439,שלמה,בן-עמי,23,https://fs.knesset.gov.il/globaldocs/MK/23/1_23_3_66.jpeg
+580,יצחק,כהן,65,https://fs.knesset.gov.il/globaldocs/MK/65/1_65_3_178.jpeg
+412,צבי,הנדל,46,https://fs.knesset.gov.il/globaldocs/MK/46/1_46_3_126.jpeg
+559,מיכאל,קליינר,109,https://fs.knesset.gov.il/globaldocs/MK/109/1_109_3_303.jpeg
+455,אופיר,פינס-פז,100,https://fs.knesset.gov.il/globaldocs/MK/100/1_100_3_278.jpeg
+2315,צבי,ויינברג,48,https://fs.knesset.gov.il/globaldocs/MK/48/1_48_3_130.jpeg
+487,נסים,דהן,37,https://fs.knesset.gov.il/globaldocs/MK/37/1_37_3_100.jpeg
+488,יצחק,וקנין,50,https://fs.knesset.gov.il/globaldocs/MK/50/1_50_3_136.jpeg
+2420,אלכסנדר,לובוצקי,71,https://fs.knesset.gov.il/globaldocs/MK/71/1_71_3_200.jpeg
+554,תאופיק,חטיב,57,https://fs.knesset.gov.il/globaldocs/MK/57/1_57_3_153.jpeg
+2444,יהודה,לנקרי,79,https://fs.knesset.gov.il/globaldocs/MK/79/1_79_3_223.jpeg
+2594,דוד,ראם,111,https://fs.knesset.gov.il/globaldocs/MK/111/1_111_3_307.jpeg
+2208,שמריהו,בן-צור,24,https://fs.knesset.gov.il/globaldocs/MK/24/1_24_3_68.jpeg
+448,סופה,לנדבר,78,https://fs.knesset.gov.il/globaldocs/MK/78/1_78_3_218.jpeg
+2635,אברהם,שטרן,120,https://fs.knesset.gov.il/globaldocs/MK/120/1_120_3_329.jpeg
+464,זאב,בוים,16,https://fs.knesset.gov.il/globaldocs/MK/16/1_16_3_50.jpeg
+432,אפי,אושעיה,6,https://fs.knesset.gov.il/globaldocs/MK/6/1_6_3_17.jpeg
+2511,אחמד,סעד,95,https://fs.knesset.gov.il/globaldocs/MK/95/1_95_3_267.jpeg
+2449,אדיסו,מאסלה,81,https://fs.knesset.gov.il/globaldocs/MK/81/1_81_3_227.jpeg
+461,שלום,שמחון,123,https://fs.knesset.gov.il/globaldocs/MK/123/1_123_3_338.jpeg
+483,דוד,אזולאי,7,https://fs.knesset.gov.il/globaldocs/MK/7/1_7_3_21.jpeg
+552,רומן,ברונפמן,26,https://fs.knesset.gov.il/globaldocs/MK/26/1_26_3_72.jpeg
+2371,יונה,יהב,60,https://fs.knesset.gov.il/globaldocs/MK/60/1_60_3_159.jpeg
+476,ראובן,ריבלין,114,https://fs.knesset.gov.il/globaldocs/MK/114/1_114_3_314.jpeg
+565,מיכאל,נודלמן,89,https://fs.knesset.gov.il/globaldocs/MK/89/1_89_3_244.jpeg
+533,מרינה,סולודקין,91,https://fs.knesset.gov.il/globaldocs/MK/91/1_91_3_254.jpeg
+445,איתן,כבל,64,https://fs.knesset.gov.il/globaldocs/MK/64/1_64_3_171.jpeg
+1068,ניסן,סלומינסקי,92,https://fs.knesset.gov.il/globaldocs/MK/92/1_92_3_258.jpeg
+2187,יוסף,בורג,288,https://fs.knesset.gov.il/globaldocs/MK/288/1_288_3_708.jpeg
+2194,יצחק,בן-אהרן,294,https://fs.knesset.gov.il/globaldocs/MK/294/1_294_3_720.jpeg
+2273,שרה,דורון,359,https://fs.knesset.gov.il/globaldocs/MK/359/1_359_3_850.jpeg
+2431,שלמה,לורינץ,481,https://fs.knesset.gov.il/globaldocs/MK/481/1_481_3_1094.jpeg
+2476,יצחק,נבון,687,https://fs.knesset.gov.il/globaldocs/MK/687/1_687_3_1500.jpeg
+2232,אליהו,גבאי,30,https://fs.knesset.gov.il/globaldocs/MK/30/1_30_3_81.jpeg
+2345,רפיק,חג' יחיא,55,https://fs.knesset.gov.il/globaldocs/MK/55/1_55_3_149.jpeg
+2475,יובל,נאמן,515,https://fs.knesset.gov.il/globaldocs/MK/515/1_515_3_1162.jpeg
+2435,אברהם יוסף,לייזרזון,76,https://fs.knesset.gov.il/globaldocs/MK/76/1_76_3_210.jpeg
+2650,דורון,שמואלי,124,https://fs.knesset.gov.il/globaldocs/MK/124/1_124_3_340.jpeg
+468,ישראל,כץ,69,https://fs.knesset.gov.il/globaldocs/MK/69/1_69_3_191.jpeg
+463,משה,ארנס,278,https://fs.knesset.gov.il/globaldocs/MK/278/1_278_3_688.jpeg
+560,אחמד,טיבי,208,https://fs.knesset.gov.il/globaldocs/MK/208/1_208_3_520.jpeg
+498,משולם,נהרי,222,https://fs.knesset.gov.il/globaldocs/MK/222/1_222_3_572.jpeg
+2439,אמנון,ליפקין-שחק,215,https://fs.knesset.gov.il/globaldocs/MK/215/1_215_3_551.jpeg
+523,חיים,דרוקמן,202,https://fs.knesset.gov.il/globaldocs/MK/202/1_202_3_503.jpeg
+473,דני,נוה,223,https://fs.knesset.gov.il/globaldocs/MK/223/1_223_3_575.jpeg
+501,יאיר,פרץ,228,https://fs.knesset.gov.il/globaldocs/MK/228/1_228_3_585.jpeg
+490,נסים,זאב,206,https://fs.knesset.gov.il/globaldocs/MK/206/1_206_3_513.jpeg
+1067,מתן,וילנאי,204,https://fs.knesset.gov.il/globaldocs/MK/204/1_204_3_508.jpeg
+517,יוסף (טומי),לפיד,217,https://fs.knesset.gov.il/globaldocs/MK/217/1_217_3_560.jpeg
+2498,אורי,סביר,224,https://fs.knesset.gov.il/globaldocs/MK/224/1_224_3_577.jpeg
+521,זבולון,אורלב,194,https://fs.knesset.gov.il/globaldocs/MK/194/1_194_3_477.jpeg
+542,עסאם,מח'ול,218,https://fs.knesset.gov.il/globaldocs/MK/218/1_218_3_562.jpeg
+427,אביגדור,ליברמן,214,https://fs.knesset.gov.il/globaldocs/MK/214/1_214_3_548.jpeg
+556,חיים,כץ,212,https://fs.knesset.gov.il/globaldocs/MK/212/1_212_3_535.jpeg
+492,עופר,חוגי,207,https://fs.knesset.gov.il/globaldocs/MK/207/1_207_3_516.jpeg
+485,יצחק,גאגולה,198,https://fs.knesset.gov.il/globaldocs/MK/198/1_198_3_485.jpeg
+475,איוב,קרא,230,https://fs.knesset.gov.il/globaldocs/MK/230/1_230_3_591.jpeg
+520,יוסף יצחק,פריצקי,227,https://fs.knesset.gov.il/globaldocs/MK/227/1_227_3_583.jpeg
+539,דליה,רבין-פילוסוף,231,https://fs.knesset.gov.il/globaldocs/MK/231/1_231_3_596.jpeg
+528,יעקב,ליצמן,216,https://fs.knesset.gov.il/globaldocs/MK/216/1_216_3_555.jpeg
+421,אליעזר,כהן,209,https://fs.knesset.gov.il/globaldocs/MK/209/1_209_3_525.jpeg
+540,מוחמד,ברכה,197,https://fs.knesset.gov.il/globaldocs/MK/197/1_197_3_482.jpeg
+504,זהבה,גלאון,201,https://fs.knesset.gov.il/globaldocs/MK/201/1_201_3_498.jpeg
+564,רחמים,מלול,219,https://fs.knesset.gov.il/globaldocs/MK/219/1_219_3_564.jpeg
+503,אילן,גילאון,200,https://fs.knesset.gov.il/globaldocs/MK/200/1_200_3_491.jpeg
+469,ציפי,לבני,213,https://fs.knesset.gov.il/globaldocs/MK/213/1_213_3_542.jpeg
+505,אבשלום,וילן,203,https://fs.knesset.gov.il/globaldocs/MK/203/1_203_3_505.jpeg
+555,מוחמד,כנעאן,211,https://fs.knesset.gov.il/globaldocs/MK/211/1_211_3_531.jpeg
+2229,חוסניה,ג'בארה,199,https://fs.knesset.gov.il/globaldocs/MK/199/1_199_3_487.jpeg
+495,אמנון,כהן,210,https://fs.knesset.gov.il/globaldocs/MK/210/1_210_3_528.jpeg
+499,יצחק,סבן,225,https://fs.knesset.gov.il/globaldocs/MK/225/1_225_3_579.jpeg
+518,יהודית,נאות,221,https://fs.knesset.gov.il/globaldocs/MK/221/1_221_3_568.jpeg
+513,ויקטור,בריילובסקי,196,https://fs.knesset.gov.il/globaldocs/MK/196/1_196_3_479.jpeg
+449,מיכאל,מלכיאור,220,https://fs.knesset.gov.il/globaldocs/MK/220/1_220_3_566.jpeg
+477,יובל,שטייניץ,695,https://fs.knesset.gov.il/globaldocs/MK/695/1_695_3_1514.jpeg
+525,נחום,לנגנטל,696,https://fs.knesset.gov.il/globaldocs/MK/696/1_696_3_1519.jpeg
+1043,יולי,תמיר,697,https://fs.knesset.gov.il/globaldocs/MK/697/1_697_3_1521.jpeg
+534,גנדי,ריגר,232,https://fs.knesset.gov.il/globaldocs/MK/232/1_232_3_598.jpeg
+553,אלכסנדר,צינקר,229,https://fs.knesset.gov.il/globaldocs/MK/229/1_229_3_587.jpeg
+431,קולט,אביטל,704,https://fs.knesset.gov.il/globaldocs/MK/704/1_704_3_1535.jpeg
+511,מוסי,רז,708,https://fs.knesset.gov.il/globaldocs/MK/708/1_708_3_1545.jpeg
+538,מרדכי,משעני,709,https://fs.knesset.gov.il/globaldocs/MK/709/1_709_3_1550.jpeg
+548,נחמה,רונן,711,https://fs.knesset.gov.il/globaldocs/MK/711/1_711_3_1554.jpeg
+30300,אמיר,אוחנה,953,https://fs.knesset.gov.il/globaldocs/MK/953/1_953_3_2628.jpeg
+543,יחיאל,לסרי,712,https://fs.knesset.gov.il/globaldocs/MK/712/1_712_3_1556.jpeg
+713,אורי,אריאל,713,https://fs.knesset.gov.il/globaldocs/MK/713/1_713_3_1560.jpeg
+2502,עדנה,סולודר,537,https://fs.knesset.gov.il/globaldocs/MK/537/1_537_3_1204.jpeg
+755,אלי,כהן,714,https://fs.knesset.gov.il/globaldocs/MK/714/1_714_3_1565.jpeg
+763,אפי,איתם,715,https://fs.knesset.gov.il/globaldocs/MK/715/1_715_3_1567.jpeg
+818,יהודה,גלעד,716,https://fs.knesset.gov.il/globaldocs/MK/716/1_716_3_1569.jpeg
+889,צלי,רשף,718,https://fs.knesset.gov.il/globaldocs/MK/718/1_718_3_1574.jpeg
+926,עוזי,אבן,719,https://fs.knesset.gov.il/globaldocs/MK/719/1_719_3_1576.jpeg
+949,שאול,מופז,720,https://fs.knesset.gov.il/globaldocs/MK/720/1_720_3_1579.jpeg
+865,אורית,נוקד,717,https://fs.knesset.gov.il/globaldocs/MK/717/1_717_3_1572.jpeg
+986,פנחס,צברי,722,https://fs.knesset.gov.il/globaldocs/MK/722/1_722_3_1582.jpeg
+1027,גדעון,סער,725,https://fs.knesset.gov.il/globaldocs/MK/725/1_725_3_1595.jpeg
+1041,לאה,נס,738,https://fs.knesset.gov.il/globaldocs/MK/738/1_738_3_1634.jpeg
+1044,יצחק,הרצוג,740,https://fs.knesset.gov.il/globaldocs/MK/740/1_740_3_1642.jpeg
+1038,רוני,בר-און,735,https://fs.knesset.gov.il/globaldocs/MK/735/1_735_3_1627.jpeg
+1061,ג'מאל,זחאלקה,756,https://fs.knesset.gov.il/globaldocs/MK/756/1_756_3_1690.jpeg
+1059,גילה,פינקלשטיין,753,https://fs.knesset.gov.il/globaldocs/MK/753/1_753_3_1677.jpeg
+1055,אריה,אלדד,752,https://fs.knesset.gov.il/globaldocs/MK/752/1_752_3_1675.jpeg
+1039,ענבל,גבריאלי,736,https://fs.knesset.gov.il/globaldocs/MK/736/1_736_3_1629.jpeg
+1045,דני,יתום,741,https://fs.knesset.gov.il/globaldocs/MK/741/1_741_3_1647.jpeg
+1032,אהוד,יתום,729,https://fs.knesset.gov.il/globaldocs/MK/729/1_729_3_1606.jpeg
+1056,יעקב,מרגי,751,https://fs.knesset.gov.il/globaldocs/MK/751/1_751_3_1669.jpeg
+1053,חמי,דורון,749,https://fs.knesset.gov.il/globaldocs/MK/749/1_749_3_1663.jpeg
+1025,גילה,גמליאל,723,https://fs.knesset.gov.il/globaldocs/MK/723/1_723_3_1586.jpeg
+1028,דניאל,בנלולו,726,https://fs.knesset.gov.il/globaldocs/MK/726/1_726_3_1598.jpeg
+1040,יחיאל,חזן,737,https://fs.knesset.gov.il/globaldocs/MK/737/1_737_3_1631.jpeg
+1031,יעקב,אדרי,728,https://fs.knesset.gov.il/globaldocs/MK/728/1_728_3_1604.jpeg
+1057,ישראל,אייכלר,754,https://fs.knesset.gov.il/globaldocs/MK/754/1_754_3_1681.jpeg
+1062,ואסל,טאהא,757,https://fs.knesset.gov.il/globaldocs/MK/757/1_757_3_1695.jpeg
+1036,מיכאל,גורלובסקי,733,https://fs.knesset.gov.il/globaldocs/MK/733/1_733_3_1617.jpeg
+1026,רוחמה,אברהם-בלילא,724,https://fs.knesset.gov.il/globaldocs/MK/724/1_724_3_1592.jpeg
+1033,אלי,אפללו,730,https://fs.knesset.gov.il/globaldocs/MK/730/1_730_3_1609.jpeg
+1034,משה,כחלון,731,https://fs.knesset.gov.il/globaldocs/MK/731/1_731_3_1612.jpeg
+1052,אילן,ליבוביץ,748,https://fs.knesset.gov.il/globaldocs/MK/748/1_748_3_1661.jpeg
+1042,עמרם,מצנע,739,https://fs.knesset.gov.il/globaldocs/MK/739/1_739_3_1637.jpeg
+1046,אילן,שלגי,742,https://fs.knesset.gov.il/globaldocs/MK/742/1_742_3_1649.jpeg
+1048,רשף,חן,744,https://fs.knesset.gov.il/globaldocs/MK/744/1_744_3_1653.jpeg
+1049,רוני,בריזון,745,https://fs.knesset.gov.il/globaldocs/MK/745/1_745_3_1655.jpeg
+1047,מל,פולישוק-בלוך,743,https://fs.knesset.gov.il/globaldocs/MK/743/1_743_3_1651.jpeg
+1030,מגלי,והבה,727,https://fs.knesset.gov.il/globaldocs/MK/727/1_727_3_1601.jpeg
+1051,אתי,לבני,747,https://fs.knesset.gov.il/globaldocs/MK/747/1_747_3_1659.jpeg
+1050,אהוד,רצאבי,746,https://fs.knesset.gov.il/globaldocs/MK/746/1_746_3_1657.jpeg
+1035,עמרי,שרון,732,https://fs.knesset.gov.il/globaldocs/MK/732/1_732_3_1615.jpeg
+1037,גלעד,ארדן,734,https://fs.knesset.gov.il/globaldocs/MK/734/1_734_3_1621.jpeg
+1063,אילנה,כהן,755,https://fs.knesset.gov.il/globaldocs/MK/755/1_755_3_1686.jpeg
+1054,יגאל,יאסינוב,750,https://fs.knesset.gov.il/globaldocs/MK/750/1_750_3_1665.jpeg
+2014,גאלב,מג'אדלה,758,https://fs.knesset.gov.il/globaldocs/MK/758/1_758_3_1698.jpeg
+3175,אראלה,גולן,759,https://fs.knesset.gov.il/globaldocs/MK/759/1_759_3_1701.jpeg
+2146,אריה לובה,אליאב,255,https://fs.knesset.gov.il/globaldocs/MK/255/1_255_3_642.jpeg
+4035,פנינה,רוזנבלום,760,https://fs.knesset.gov.il/globaldocs/MK/760/1_760_3_1703.jpeg
+4155,טובה,אילן,761,https://fs.knesset.gov.il/globaldocs/MK/761/1_761_3_1705.jpeg
+4156,רונן,צור,762,
+4217,אסתרינה,טרטמן,764,https://fs.knesset.gov.il/globaldocs/MK/764/1_764_3_1711.jpeg
+4175,דני,קורן,763,https://fs.knesset.gov.il/globaldocs/MK/763/1_763_3_1709.jpeg
+4235,נטע,דוברין,766,https://fs.knesset.gov.il/globaldocs/MK/766/1_766_3_1715.jpeg
+4398,מנחם,בן-ששון,767,https://fs.knesset.gov.il/globaldocs/MK/767/1_767_3_1717.jpeg
+4298,רפי,איתן,794,https://fs.knesset.gov.il/globaldocs/MK/794/1_794_3_1817.jpeg
+4355,יואל,חסון,772,https://fs.knesset.gov.il/globaldocs/MK/772/1_772_3_1739.jpeg
+4300,משה,שרוני,803,https://fs.knesset.gov.il/globaldocs/MK/803/1_803_3_1841.jpeg
+4400,רונית,תירוש,774,https://fs.knesset.gov.il/globaldocs/MK/774/1_774_3_1747.jpeg
+4301,יצחק,זיו,777,https://fs.knesset.gov.il/globaldocs/MK/777/1_777_3_1754.jpeg
+4413,יצחק,אהרונוביץ',790,https://fs.knesset.gov.il/globaldocs/MK/790/1_790_3_1801.jpeg
+4416,דב,חנין,780,https://fs.knesset.gov.il/globaldocs/MK/780/1_780_3_1762.jpeg
+4397,זאב,אלקין,768,https://fs.knesset.gov.il/globaldocs/MK/768/1_768_3_1721.jpeg
+4417,אריאל,אטיאס,791,https://fs.knesset.gov.il/globaldocs/MK/791/1_791_3_1805.jpeg
+4302,יצחק,גלנטי,799,https://fs.knesset.gov.il/globaldocs/MK/799/1_799_3_1830.jpeg
+4401,עתניאל,שנלר,776,https://fs.knesset.gov.il/globaldocs/MK/776/1_776_3_1752.jpeg
+4419,אברהם,מיכאלי,784,https://fs.knesset.gov.il/globaldocs/MK/784/1_784_3_1781.jpeg
+4418,חיים,אמסלם,795,https://fs.knesset.gov.il/globaldocs/MK/795/1_795_3_1820.jpeg
+4403,יורם,מרציאנו,788,https://fs.knesset.gov.il/globaldocs/MK/788/1_788_3_1794.jpeg
+4304,שרה,מרום שלו,787,https://fs.knesset.gov.il/globaldocs/MK/787/1_787_3_1791.jpeg
+4405,שלי,יחימוביץ',782,https://fs.knesset.gov.il/globaldocs/MK/782/1_782_3_1773.jpeg
+4411,סטס,מיסז'ניקוב,786,https://fs.knesset.gov.il/globaldocs/MK/786/1_786_3_1789.jpeg
+4402,אביגדור,יצחקי,773,https://fs.knesset.gov.il/globaldocs/MK/773/1_773_3_1744.jpeg
+4375,עמירה,דותן,770,https://fs.knesset.gov.il/globaldocs/MK/770/1_770_3_1728.jpeg
+4404,נאדיה,חילו,779,https://fs.knesset.gov.il/globaldocs/MK/779/1_779_3_1758.jpeg
+4408,ליה,שמטוב,802,https://fs.knesset.gov.il/globaldocs/MK/802/1_802_3_1839.jpeg
+4635,שי,חרמש,804,https://fs.knesset.gov.il/globaldocs/MK/804/1_804_3_1844.jpeg
+4297,אברהים,צרצור,800,https://fs.knesset.gov.il/globaldocs/MK/800/1_800_3_1833.jpeg
+4406,עמיחי,אילון,792,https://fs.knesset.gov.il/globaldocs/MK/792/1_792_3_1808.jpeg
+4295,חנא,סוייד,789,https://fs.knesset.gov.il/globaldocs/MK/789/1_789_3_1797.jpeg
+4410,יוסף,שגל,801,https://fs.knesset.gov.il/globaldocs/MK/801/1_801_3_1836.jpeg
+4299,יעקב,בן-יזרי,796,https://fs.knesset.gov.il/globaldocs/MK/796/1_796_3_1822.jpeg
+4412,רוברט,אילטוב,793,https://fs.knesset.gov.il/globaldocs/MK/793/1_793_3_1812.jpeg
+4414,יעקב,כהן,783,https://fs.knesset.gov.il/globaldocs/MK/783/1_783_3_1778.jpeg
+4395,אבי,דיכטר,771,https://fs.knesset.gov.il/globaldocs/MK/771/1_771_3_1732.jpeg
+4415,עבאס,זכור,778,https://fs.knesset.gov.il/globaldocs/MK/778/1_778_3_1756.jpeg
+4399,שלמה,ברזניץ,769,https://fs.knesset.gov.il/globaldocs/MK/769/1_769_3_1726.jpeg
+4407,אבישי,ברוורמן,797,https://fs.knesset.gov.il/globaldocs/MK/797/1_797_3_1825.jpeg
+4376,ישראל,חסון,781,https://fs.knesset.gov.il/globaldocs/MK/781/1_781_3_1768.jpeg
+4303,אלחנן,גלזר,798,https://fs.knesset.gov.il/globaldocs/MK/798/1_798_3_1828.jpeg
+4409,אלכס,מילר,785,https://fs.knesset.gov.il/globaldocs/MK/785/1_785_3_1785.jpeg
+6076,דוד,רותם,805,https://fs.knesset.gov.il/globaldocs/MK/805/1_805_3_1847.jpeg
+6235,סעיד,נפאע,807,https://fs.knesset.gov.il/globaldocs/MK/807/1_807_3_1853.jpeg
+7035,יצחק,בן ישראל,808,https://fs.knesset.gov.il/globaldocs/MK/808/1_808_3_1855.jpeg
+7736,יוחנן,פלסנר,809,https://fs.knesset.gov.il/globaldocs/MK/809/1_809_3_1858.jpeg
+9315,שלמה,מולה,810,https://fs.knesset.gov.il/globaldocs/MK/810/1_810_3_1861.jpeg
+10355,מזור,בהיינה,811,https://fs.knesset.gov.il/globaldocs/MK/811/1_811_3_1863.jpeg
+10555,שכיב מוראד,שנאן,812,https://fs.knesset.gov.il/globaldocs/MK/812/1_812_3_1866.jpeg
+11235,לאון,ליטינצקי,813,https://fs.knesset.gov.il/globaldocs/MK/813/1_813_3_1869.jpeg
+11835,אורי,מקלב,814,https://fs.knesset.gov.il/globaldocs/MK/814/1_814_3_1874.jpeg
+12595,צביה,גרינפילד,815,https://fs.knesset.gov.il/globaldocs/MK/815/1_815_3_1879.jpeg
+12958,ציון,פיניאן,827,https://fs.knesset.gov.il/globaldocs/MK/827/1_827_3_1927.jpeg
+12947,ניצן,הורוביץ,843,https://fs.knesset.gov.il/globaldocs/MK/843/1_843_3_1999.jpeg
+12945,מסעוד,גנאים,844,https://fs.knesset.gov.il/globaldocs/MK/844/1_844_3_2004.jpeg
+12944,דני,דנון,828,https://fs.knesset.gov.il/globaldocs/MK/828/1_828_3_1930.jpeg
+12950,פאניה,קירשנבאום,835,https://fs.knesset.gov.il/globaldocs/MK/835/1_835_3_1965.jpeg
+12966,דניאל,בן-סימון,836,https://fs.knesset.gov.il/globaldocs/MK/836/1_836_3_1969.jpeg
+12942,מיכאל,בן-ארי,841,https://fs.knesset.gov.il/globaldocs/MK/841/1_841_3_1992.jpeg
+12937,אופיר,אקוניס,830,https://fs.knesset.gov.il/globaldocs/MK/830/1_830_3_1939.jpeg
+12959,מירי (מרים),רגב,831,https://fs.knesset.gov.il/globaldocs/MK/831/1_831_3_1946.jpeg
+12955,מנחם אליעזר,מוזס,839,https://fs.knesset.gov.il/globaldocs/MK/839/1_839_3_1983.jpeg
+12946,דניאל,הרשקוביץ,847,https://fs.knesset.gov.il/globaldocs/MK/847/1_847_3_2021.jpeg
+12939,דניאל,אילון,833,https://fs.knesset.gov.il/globaldocs/MK/833/1_833_3_1959.jpeg
+12936,עפו,אגבאריה,842,https://fs.knesset.gov.il/globaldocs/MK/842/1_842_3_1995.jpeg
+12941,זאב,בילסקי,817,https://fs.knesset.gov.il/globaldocs/MK/817/1_817_3_1884.jpeg
+12961,נחמן,שי,818,https://fs.knesset.gov.il/globaldocs/MK/818/1_818_3_1888.jpeg
+12951,יריב,לוין,826,https://fs.knesset.gov.il/globaldocs/MK/826/1_826_3_1921.jpeg
+12956,אורי,אורבך,845,https://fs.knesset.gov.il/globaldocs/MK/845/1_845_3_2010.jpeg
+12952,אורלי,לוי אבקסיס,832,https://fs.knesset.gov.il/globaldocs/MK/832/1_832_3_1953.jpeg
+12964,חנין,זועבי,846,https://fs.knesset.gov.il/globaldocs/MK/846/1_846_3_2015.jpeg
+12935,רחל,אדטו,820,https://fs.knesset.gov.il/globaldocs/MK/820/1_820_3_1897.jpeg
+12965,אורית,זוארץ,822,https://fs.knesset.gov.il/globaldocs/MK/822/1_822_3_1903.jpeg
+12948,ציפי,חוטובלי,825,https://fs.knesset.gov.il/globaldocs/MK/825/1_825_3_1914.jpeg
+12957,יוסי,פלד,824,https://fs.knesset.gov.il/globaldocs/MK/824/1_824_3_1910.jpeg
+2411,יעקב,כץ,840,https://fs.knesset.gov.il/globaldocs/MK/840/1_840_3_1989.jpeg
+12960,כרמל,שאמה-הכהן,829,https://fs.knesset.gov.il/globaldocs/MK/829/1_829_3_1934.jpeg
+12953,משה (מוץ),מטלון,838,https://fs.knesset.gov.il/globaldocs/MK/838/1_838_3_1979.jpeg
+12962,רוברט,טיבייב,819,https://fs.knesset.gov.il/globaldocs/MK/819/1_819_3_1894.jpeg
+12943,אריה,ביבי,821,https://fs.knesset.gov.il/globaldocs/MK/821/1_821_3_1900.jpeg
+12938,חמד,עמאר,837,https://fs.knesset.gov.il/globaldocs/MK/837/1_837_3_1973.jpeg
+12954,אנסטסיה,מיכאלי,834,https://fs.knesset.gov.il/globaldocs/MK/834/1_834_3_1962.jpeg
+12963,משה,יעלון,823,https://fs.knesset.gov.il/globaldocs/MK/823/1_823_3_1906.jpeg
+13830,יוליה,שמאלוב-ברקוביץ,848,https://fs.knesset.gov.il/globaldocs/MK/848/1_848_3_2024.jpeg
+2297,אליהו,הכרמלי,378,https://fs.knesset.gov.il/globaldocs/MK/378/1_378_3_888.jpeg
+14470,עינת,וילף,849,https://fs.knesset.gov.il/globaldocs/MK/849/1_849_3_2027.jpeg
+17630,נינו,אבסדזה,850,https://fs.knesset.gov.il/globaldocs/MK/850/1_850_3_2030.jpeg
+18990,דורון,אביטל,851,https://fs.knesset.gov.il/globaldocs/MK/851/1_851_3_2033.jpeg
+21431,אברהם,דואן,852,https://fs.knesset.gov.il/globaldocs/MK/852/1_852_3_2036.jpeg
+22091,יובל,צלנר,853,https://fs.knesset.gov.il/globaldocs/MK/853/1_853_3_2039.jpeg
+22151,אכרם,חסון,854,https://fs.knesset.gov.il/globaldocs/MK/854/1_854_3_2044.jpeg
+22811,אחמד,דבאח,855,https://fs.knesset.gov.il/globaldocs/MK/855/1_855_3_20425.jpeg
+22911,אללי,אדמסו,856,
+23557,שמעון,אוחיון,859,https://fs.knesset.gov.il/globaldocs/MK/859/1_859_3_2061.jpeg
+23631,קארין,אלהרר,860,https://fs.knesset.gov.il/globaldocs/MK/860/1_860_3_2066.jpeg
+23634,רות,קלדרון,892,https://fs.knesset.gov.il/globaldocs/MK/892/1_892_3_2251.jpeg
+23635,פנינה,תמנו,905,https://fs.knesset.gov.il/globaldocs/MK/905/1_905_3_2327.jpeg
+23636,רינה,פרנקל,889,https://fs.knesset.gov.il/globaldocs/MK/889/1_889_3_2239.jpeg
+23638,דב,ליפמן,877,https://fs.knesset.gov.il/globaldocs/MK/877/1_877_3_2173.jpeg
+23640,רונן,הופמן,869,https://fs.knesset.gov.il/globaldocs/MK/869/1_869_3_2126.jpeg
+23594,יאיר,לפיד,878,https://fs.knesset.gov.il/globaldocs/MK/878/1_878_3_2178.jpeg
+23511,נפתלי,בנט,864,https://fs.knesset.gov.il/globaldocs/MK/864/1_864_3_2094.jpeg
+23643,באסל,גטאס,867,https://fs.knesset.gov.il/globaldocs/MK/867/1_867_3_2115.jpeg
+23567,אראל,מרגלית,882,https://fs.knesset.gov.il/globaldocs/MK/882/1_882_3_2203.jpeg
+23552,יוני,שטבון,898,https://fs.knesset.gov.il/globaldocs/MK/898/1_898_3_2284.jpeg
+23673,עמר,בר-לב,866,https://fs.knesset.gov.il/globaldocs/MK/866/1_866_3_2108.jpeg
+23592,דוד,צור,890,https://fs.knesset.gov.il/globaldocs/MK/890/1_890_3_2243.jpeg
+23653,מיכל,רוזין,895,https://fs.knesset.gov.il/globaldocs/MK/895/1_895_3_2264.jpeg
+23596,יעל,גרמן,868,https://fs.knesset.gov.il/globaldocs/MK/868/1_868_3_2120.jpeg
+23591,אלעזר,שטרן,899,https://fs.knesset.gov.il/globaldocs/MK/899/1_899_3_2289.jpeg
+23632,מיקי,לוי,876,https://fs.knesset.gov.il/globaldocs/MK/876/1_876_3_2167.jpeg
+23633,שמעון,סולומון,883,https://fs.knesset.gov.il/globaldocs/MK/883/1_883_3_2209.jpeg
+23551,אורית,סטרוק,884,https://fs.knesset.gov.il/globaldocs/MK/884/1_884_3_2213.jpeg
+23512,איילת,שקד,904,https://fs.knesset.gov.il/globaldocs/MK/904/1_904_3_2321.jpeg
+23569,מיקי,רוזנטל,896,https://fs.knesset.gov.il/globaldocs/MK/896/1_896_3_2271.jpeg
+23652,עיסאווי,פריג',888,https://fs.knesset.gov.il/globaldocs/MK/888/1_888_3_2233.jpeg
+23637,יפעת,קריב,894,https://fs.knesset.gov.il/globaldocs/MK/894/1_894_3_2259.jpeg
+23597,מאיר,כהן,874,https://fs.knesset.gov.il/globaldocs/MK/874/1_874_3_2153.jpeg
+9615,יחיאל חיליק,בר,865,https://fs.knesset.gov.il/globaldocs/MK/865/1_865_3_2101.jpeg
+23599,עליזה,לביא,875,https://fs.knesset.gov.il/globaldocs/MK/875/1_875_3_2160.jpeg
+23556,משה זלמן,פייגלין,885,https://fs.knesset.gov.il/globaldocs/MK/885/1_885_3_2217.jpeg
+23639,בועז,טופורובסקי,872,https://fs.knesset.gov.il/globaldocs/MK/872/1_872_3_2141.jpeg
+23600,עפר,שלח,900,https://fs.knesset.gov.il/globaldocs/MK/900/1_900_3_2296.jpeg
+23641,יעקב,אשר,861,https://fs.knesset.gov.il/globaldocs/MK/861/1_861_3_2073.jpeg
+23566,סתיו,שפיר,903,https://fs.knesset.gov.il/globaldocs/MK/903/1_903_3_2314.jpeg
+23565,מרב,מיכאלי,881,https://fs.knesset.gov.il/globaldocs/MK/881/1_881_3_2196.jpeg
+23531,אלי,בן-דהן,863,https://fs.knesset.gov.il/globaldocs/MK/863/1_863_3_2087.jpeg
+23651,תמר,זנדברג,871,https://fs.knesset.gov.il/globaldocs/MK/871/1_871_3_2135.jpeg
+23533,אברהם,וורצמן,870,https://fs.knesset.gov.il/globaldocs/MK/870/1_870_3_2130.jpeg
+23570,מיכל,בירן,862,https://fs.knesset.gov.il/globaldocs/MK/862/1_862_3_2080.jpeg
+23532,זבולון,כלפה,893,https://fs.knesset.gov.il/globaldocs/MK/893/1_893_3_2255.jpeg
+23642,טלב,אבו עראר,857,https://fs.knesset.gov.il/globaldocs/MK/857/1_857_3_2055.jpeg
+23571,משה,מזרחי,880,https://fs.knesset.gov.il/globaldocs/MK/880/1_880_3_2191.jpeg
+23598,יעקב,פרי,887,https://fs.knesset.gov.il/globaldocs/MK/887/1_887_3_2226.jpeg
+23595,שי,פירון,886,https://fs.knesset.gov.il/globaldocs/MK/886/1_886_3_2221.jpeg
+23534,מרדכי (מוטי),יוגב,873,https://fs.knesset.gov.il/globaldocs/MK/873/1_873_3_2146.jpeg
+23601,יואל,רזבוזוב,897,https://fs.knesset.gov.il/globaldocs/MK/897/1_897_3_2278.jpeg
+23568,איציק,שמולי,901,https://fs.knesset.gov.il/globaldocs/MK/901/1_901_3_2303.jpeg
+23602,עדי,קול,891,https://fs.knesset.gov.il/globaldocs/MK/891/1_891_3_2247.jpeg
+23553,שולי,מועלם-רפאלי,879,https://fs.knesset.gov.il/globaldocs/MK/879/1_879_3_2185.jpeg
+23555,יאיר,שמיר,902,https://fs.knesset.gov.il/globaldocs/MK/902/1_902_3_2309.jpeg
+28513,יואב,בן צור,906,https://fs.knesset.gov.il/globaldocs/MK/906/1_906_3_2332.jpeg
+29855,ליאור,אדרי,907,https://fs.knesset.gov.il/globaldocs/MK/907/1_907_3_2705.jpeg
+30059,ענת,ברקו,918,https://fs.knesset.gov.il/globaldocs/MK/918/1_918_3_2406.jpeg
+30076,שרון,גל,920,https://fs.knesset.gov.il/globaldocs/MK/920/1_920_3_2419.jpeg
+30062,זוהיר,בהלול,913,https://fs.knesset.gov.il/globaldocs/MK/913/1_913_3_2371.jpeg
+30095,אברהם,נגוסה,932,https://fs.knesset.gov.il/globaldocs/MK/932/1_932_3_2495.jpeg
+30064,קסניה,סבטלובה,934,https://fs.knesset.gov.il/globaldocs/MK/934/1_934_3_2509.jpeg
+30058,מכלוף מיקי,זוהר,922,https://fs.knesset.gov.il/globaldocs/MK/922/1_922_3_2431.jpeg
+30061,רויטל,סויד,935,https://fs.knesset.gov.il/globaldocs/MK/935/1_935_3_2516.jpeg
+30066,איימן,עודה,938,https://fs.knesset.gov.il/globaldocs/MK/938/1_938_3_2537.jpeg
+30074,חיים,ילין,927,https://fs.knesset.gov.il/globaldocs/MK/927/1_927_3_2466.jpeg
+30102,מירב,בן-ארי,915,https://fs.knesset.gov.il/globaldocs/MK/915/1_915_3_2385.jpeg
+30054,ינון,מגל,930,https://fs.knesset.gov.il/globaldocs/MK/930/1_930_3_2483.jpeg
+23572,דניאל,עטר,940,https://fs.knesset.gov.il/globaldocs/MK/940/1_940_3_2550.jpeg
+30067,עאידה,תומא סלימאן,948,https://fs.knesset.gov.il/globaldocs/MK/948/1_948_3_2597.jpeg
+30080,רחל,עזריה,939,https://fs.knesset.gov.il/globaldocs/MK/939/1_939_3_2544.jpeg
+30055,בצלאל,סמוטריץ',936,https://fs.knesset.gov.il/globaldocs/MK/936/1_936_3_2523.jpeg
+30070,אוסאמה,סעדי,937,https://fs.knesset.gov.il/globaldocs/MK/937/1_937_3_2530.jpeg
+30098,אורן אסף,חזן,924,https://fs.knesset.gov.il/globaldocs/MK/924/1_924_3_2445.jpeg
+30069,יוסף,ג'בארין,919,https://fs.knesset.gov.il/globaldocs/MK/919/1_919_3_2413.jpeg
+30065,איילת,נחמיאס ורבין,933,https://fs.knesset.gov.il/globaldocs/MK/933/1_933_3_2502.jpeg
+30068,עבד אל חכים,חאג' יחיא,923,https://fs.knesset.gov.il/globaldocs/MK/923/1_923_3_2438.jpeg
+23558,דוד,ביטן,914,https://fs.knesset.gov.il/globaldocs/MK/914/1_914_3_2378.jpeg
+30063,איתן,ברושי,917,https://fs.knesset.gov.il/globaldocs/MK/917/1_917_3_2399.jpeg
+30084,רועי,פולקמן,941,https://fs.knesset.gov.il/globaldocs/MK/941/1_941_3_2555.jpeg
+30082,יפעת,שאשא ביטון,946,https://fs.knesset.gov.il/globaldocs/MK/946/1_946_3_2590.jpeg
+23573,יוסי,יונה,926,https://fs.knesset.gov.il/globaldocs/MK/926/1_926_3_2459.jpeg
+30099,איל,בן ראובן,916,https://fs.knesset.gov.il/globaldocs/MK/916/1_916_3_2392.jpeg
+30078,אלי,אלאלוף,911,https://fs.knesset.gov.il/globaldocs/MK/911/1_911_3_2357.jpeg
+30097,ירון,מזוז,931,https://fs.knesset.gov.il/globaldocs/MK/931/1_931_3_2488.jpeg
+30071,עבדאללה,אבו מערוף,909,https://fs.knesset.gov.il/globaldocs/MK/909/1_909_3_2346.jpeg
+30060,מנואל,טרכטנברג,925,https://fs.knesset.gov.il/globaldocs/MK/925/1_925_3_2452.jpeg
+30081,טלי,פלוסקוב,942,https://fs.knesset.gov.il/globaldocs/MK/942/1_942_3_2562.jpeg
+30057,יואב,קיש,945,https://fs.knesset.gov.il/globaldocs/MK/945/1_945_3_2583.jpeg
+30117,אברהם (אבי),גבאי,949,https://fs.knesset.gov.il/globaldocs/MK/949/1_949_3_2602.jpeg
+30077,יואב,גלנט,921,https://fs.knesset.gov.il/globaldocs/MK/921/1_921_3_2424.jpeg
+30083,אלי,כהן,928,https://fs.knesset.gov.il/globaldocs/MK/928/1_928_3_2473.jpeg
+30094,נאוה,בוקר,943,https://fs.knesset.gov.il/globaldocs/MK/943/1_943_3_2569.jpeg
+30096,נורית,קורן,944,https://fs.knesset.gov.il/globaldocs/MK/944/1_944_3_2576.jpeg
+30079,מיכאל,אורן,910,https://fs.knesset.gov.il/globaldocs/MK/910/1_910_3_2352.jpeg
+23564,דוד,אמסלם,912,https://fs.knesset.gov.il/globaldocs/MK/912/1_912_3_2364.jpeg
+30056,ז'קי,לוי,929,https://fs.knesset.gov.il/globaldocs/MK/929/1_929_3_2479.jpeg
+30118,שרן מרים,השכל,950,https://fs.knesset.gov.il/globaldocs/MK/950/1_950_3_2607.jpeg
+30121,עודד,פורר,951,https://fs.knesset.gov.il/globaldocs/MK/951/1_951_3_2614.jpeg
+30289,יעל,כהן-פארן,952,https://fs.knesset.gov.il/globaldocs/MK/952/1_952_3_2621.jpeg
+30328,יגאל,גואטה,954,https://fs.knesset.gov.il/globaldocs/MK/954/1_954_3_2635.jpeg
+30407,יהודה,גליק,955,https://fs.knesset.gov.il/globaldocs/MK/955/1_955_3_2642.jpeg
+23560,יוליה,מלינובסקי,956,https://fs.knesset.gov.il/globaldocs/MK/956/1_956_3_2649.jpeg
+30470,מיכאל,מלכיאלי,957,https://fs.knesset.gov.il/globaldocs/MK/957/1_957_3_2656.jpeg
+30520,ג'מעה,אזברגה,958,https://fs.knesset.gov.il/globaldocs/MK/958/1_958_3_2663.jpeg
+30548,סעיד,אלחרומי,959,https://fs.knesset.gov.il/globaldocs/MK/959/1_959_3_2670.jpeg
+30554,סאלח,סעד,962,https://fs.knesset.gov.il/globaldocs/MK/962/1_962_3_2683.jpeg
+30555,לאה,פדידה,963,https://fs.knesset.gov.il/globaldocs/MK/963/1_963_3_2690.jpeg
+30558,יוסף,עטאונה,964,https://fs.knesset.gov.il/globaldocs/MK/964/1_964_3_2697.jpeg
+30588,ואאל,יונס,968,https://fs.knesset.gov.il/globaldocs/MK/968/1_968_3_2712.jpeg
+30549,דן,סיידה,960,https://fs.knesset.gov.il/globaldocs/MK/960/1_960_3_2716.jpeg
+30601,ינון,אזולאי,970,https://fs.knesset.gov.il/globaldocs/MK/970/1_970_3_2722.jpeg
+30628,ניבין,אבו רחמון,971,https://fs.knesset.gov.il/globaldocs/MK/971/1_971_3_10681.jpeg
+30646,אוסנת הילה,מארק,972,https://fs.knesset.gov.il/globaldocs/MK/972/1_972_3_10778.jpeg
+30654,פנתהון,סיום,973,https://fs.knesset.gov.il/globaldocs/MK/973/1_973_3_10843.jpeg
+30681,אורנה,ברביבאי,980,https://fs.knesset.gov.il/globaldocs/MK/980/1_980_3_11115.jpeg
+30684,צבי (צביקה),האוזר,1017,https://fs.knesset.gov.il/globaldocs/MK/1017/1_1017_3_12306.jpeg
+30705,מיכל,שיר סגמן,1004,https://fs.knesset.gov.il/globaldocs/MK/1004/1_1004_3_12334.jpeg
+30691,רם,בן ברק,1022,https://fs.knesset.gov.il/globaldocs/MK/1022/1_1022_3_11242.jpeg
+30713,מנסור,עבאס,1007,https://fs.knesset.gov.il/globaldocs/MK/1007/1_1007_3_12320.jpeg
+30724,דסטה גדי,יברקן,990,https://fs.knesset.gov.il/globaldocs/MK/990/1_990_3_11206.jpeg
+30695,יואב,סגלוביץ',995,https://fs.knesset.gov.il/globaldocs/MK/995/1_995_3_11219.jpeg
+30719,עופר,כסיף,1013,https://fs.knesset.gov.il/globaldocs/MK/1013/1_1013_3_12312.jpeg
+30694,אלון,שוסטר,982,https://fs.knesset.gov.il/globaldocs/MK/982/1_982_3_11099.jpeg
+30688,יזהר,שי,999,https://fs.knesset.gov.il/globaldocs/MK/999/1_999_3_12332.jpeg
+30693,איתן,גינזבורג,981,https://fs.knesset.gov.il/globaldocs/MK/981/1_981_3_11118.jpeg
+30692,אורלי,פרומן,979,https://fs.knesset.gov.il/globaldocs/MK/979/1_979_3_11101.jpeg
+30714,אנטאנס,שחאדה,985,https://fs.knesset.gov.il/globaldocs/MK/985/1_985_3_12355.jpeg
+30720,יוראי,להב-הרצנו,998,https://fs.knesset.gov.il/globaldocs/MK/998/1_998_3_11225.jpeg
+30685,אורית,פרקש-הכהן,978,https://fs.knesset.gov.il/globaldocs/MK/978/1_978_3_11111.jpeg
+30703,קרן,ברק,1019,https://fs.knesset.gov.il/globaldocs/MK/1019/1_1019_3_12301.jpeg
+30710,אריאל,קלנר,987,https://fs.knesset.gov.il/globaldocs/MK/987/1_987_3_11129.jpeg
+30701,אופיר,כץ,976,https://fs.knesset.gov.il/globaldocs/MK/976/1_976_3_12324.jpeg
+30722,יבגני,סובה,994,https://fs.knesset.gov.il/globaldocs/MK/994/1_994_3_11217.jpeg
+30657,בנימין (בני),גנץ,988,https://fs.knesset.gov.il/globaldocs/MK/988/1_988_3_12347.jpeg
+30680,יועז,הנדל,997,https://fs.knesset.gov.il/globaldocs/MK/997/1_997_3_11223.jpeg
+30716,רפאל (רפי),פרץ,1021,https://fs.knesset.gov.il/globaldocs/MK/1021/1_1021_3_12322.jpeg
+30715,היבה,יזבק,991,https://fs.knesset.gov.il/globaldocs/MK/991/1_991_3_11209.jpeg
+30723,אלי,אבידר,983,https://fs.knesset.gov.il/globaldocs/MK/983/1_983_3_11123.jpeg
+30696,רם,שפע,1023,https://fs.knesset.gov.il/globaldocs/MK/1023/1_1023_3_12336.jpeg
+30679,מיכל (מיקי),חיימוביץ',1005,https://fs.knesset.gov.il/globaldocs/MK/1005/1_1005_3_11249.jpeg
+30700,ניר,ברקת,974,https://fs.knesset.gov.il/globaldocs/MK/974/1_974_3_12308.jpeg
+30708,מאי,גולן,1002,https://fs.knesset.gov.il/globaldocs/MK/1002/1_1002_3_12304.jpeg
+30677,גבריאל (גבי),אשכנזי,989,https://fs.knesset.gov.il/globaldocs/MK/989/1_989_3_12343.jpeg
+30672,יצחק,פינדרוס,1001,https://fs.knesset.gov.il/globaldocs/MK/1001/1_1001_3_11229.jpeg
+30678,אברהם (אבי),ניסנקורן,975,https://fs.knesset.gov.il/globaldocs/MK/975/1_975_3_11104.jpeg
+30690,ע'דיר כמאל,מריח,1020,https://fs.knesset.gov.il/globaldocs/MK/1020/1_1020_3_12316.jpeg
+30721,עידן,רול,1009,https://fs.knesset.gov.il/globaldocs/MK/1009/1_1009_3_12328.jpeg
+30660,משה,ארבל,1008,https://fs.knesset.gov.il/globaldocs/MK/1008/1_1008_3_11235.jpeg
+30687,אסף,זמיר,986,https://fs.knesset.gov.il/globaldocs/MK/986/1_986_3_11126.jpeg
+30683,יחיאל (חילי),טרופר,1000,https://fs.knesset.gov.il/globaldocs/MK/1000/1_1000_3_11227.jpeg
+30686,מירב,כהן,1006,https://fs.knesset.gov.il/globaldocs/MK/1006/1_1006_3_11251.jpeg
+30698,טל,רוסו,993,https://fs.knesset.gov.il/globaldocs/MK/993/1_993_3_11215.jpeg
+30689,עומר,ינקלביץ',1012,https://fs.knesset.gov.il/globaldocs/MK/1012/1_1012_3_12310.jpeg
+30671,יעקב,טסלר,996,https://fs.knesset.gov.il/globaldocs/MK/996/1_996_3_11221.jpeg
+30707,פטין,מולא,1016,https://fs.knesset.gov.il/globaldocs/MK/1016/1_1016_3_12314.jpeg
+30704,שלמה,קרעי,1011,https://fs.knesset.gov.il/globaldocs/MK/1011/1_1011_3_12326.jpeg
+30706,קטי קטרין,שטרית,1018,https://fs.knesset.gov.il/globaldocs/MK/1018/1_1018_3_12330.jpeg
+30709,עוזי,דיין,1010,https://fs.knesset.gov.il/globaldocs/MK/1010/1_1010_3_11255.jpeg
+30718,עידית,סילמן,1014,https://fs.knesset.gov.il/globaldocs/MK/1014/1_1014_3_12318.jpeg
+30750,ג'אבר,עסאקלה,1025,https://fs.knesset.gov.il/globaldocs/MK/1025/1_1025_3_13545.jpeg
+30749,משה,אבוטבול,1029,https://fs.knesset.gov.il/globaldocs/MK/1029/1_1029_3_13527.jpeg
+30751,סמי,אבו שחאדה,1031,https://fs.knesset.gov.il/globaldocs/MK/1031/1_1031_3_13530.jpeg
+30746,מרק,איפראימוב,1028,https://fs.knesset.gov.il/globaldocs/MK/1028/1_1028_3_13533.jpeg
+30743,יאיר,גולן,1027,https://fs.knesset.gov.il/globaldocs/MK/1027/1_1027_3_13536.jpeg
+30702,חוה אתי,עטייה,992,https://fs.knesset.gov.il/globaldocs/MK/992/1_992_3_11212.jpeg
+30741,אלכס,קושניר,1024,https://fs.knesset.gov.il/globaldocs/MK/1024/1_1024_3_13548.jpeg
+30752,וליד,טאהא,1026,https://fs.knesset.gov.il/globaldocs/MK/1026/1_1026_3_13539.jpeg
+30662,מתן,כהנא,1030,https://fs.knesset.gov.il/globaldocs/MK/1030/1_1030_3_13542.jpeg
+30717,אופיר,סופר,977,https://fs.knesset.gov.il/globaldocs/MK/977/1_977_3_11108.jpeg
+30682,מיכאל,ביטון,1003,https://fs.knesset.gov.il/globaldocs/MK/1003/1_1003_3_11237.jpeg
+30759,סונדוס,סאלח,1034,https://fs.knesset.gov.il/globaldocs/MK/1034/1_1034_3_13747.jpeg
+30758,אימאן,ח'טיב יאסין,1032,https://fs.knesset.gov.il/globaldocs/MK/1032/1_1032_3_13745.jpeg
+30760,אנדרי,קוז'ינוב,1033,https://fs.knesset.gov.il/globaldocs/MK/1033/1_1033_3_13752.jpeg
+30765,אוריאל,בוסו,1039,https://fs.knesset.gov.il/globaldocs/MK/1039/1_1039_3_15050.jpeg
+30767,אליהו,חסיד,1041,https://fs.knesset.gov.il/globaldocs/MK/1041/1_1041_3_15106.jpeg
+30762,מיכל,וונש,1036,https://fs.knesset.gov.il/globaldocs/MK/1036/1_1036_3_15031.jpeg
+30768,אליהו,ברוכי,1042,https://fs.knesset.gov.il/globaldocs/MK/1042/1_1042_3_15101.jpeg
+30766,הילה,שי וזאן,1040,https://fs.knesset.gov.il/globaldocs/MK/1040/1_1040_3_15057.jpeg
+30763,עינב,קאבלה,1037,https://fs.knesset.gov.il/globaldocs/MK/1037/1_1037_3_15036.jpeg
+30770,יוסף (יוסי),טייב,1043,https://fs.knesset.gov.il/globaldocs/MK/1043/1_1043_3_15131.jpeg
+30764,תהלה,פרידמן,1038,https://fs.knesset.gov.il/globaldocs/MK/1038/1_1038_3_15041.jpeg
+30711,עמית,הלוי,1044,https://fs.knesset.gov.il/globaldocs/MK/1044/1_1044_3_16220.jpeg
+30772,ניסים,ואטורי,1045,https://fs.knesset.gov.il/globaldocs/MK/1045/1_1045_3_16502.jpeg
+30775,יעל,רון בן משה,1048,https://fs.knesset.gov.il/globaldocs/MK/1048/1_1048_3_16568.jpeg
+30773,שבח,שטרן,1046,https://fs.knesset.gov.il/globaldocs/MK/1046/1_1046_3_16551.jpeg
+30774,מטי (מרטין),יוגב,1047,https://fs.knesset.gov.il/globaldocs/MK/1047/1_1047_3_16543.jpeg
+30776,ולדימיר,בליאק,1049,https://fs.knesset.gov.il/globaldocs/MK/1049/1_1049_3_16601.jpeg
+30777,משה,טור פז,1050,https://fs.knesset.gov.il/globaldocs/MK/1050/1_1050_3_16606.jpeg
+30778,רות,וסרמן-לנדה,1052,https://fs.knesset.gov.il/globaldocs/MK/1052/1_1052_3_16618.jpeg
+30779,ענת,כנפו,1053,https://fs.knesset.gov.il/globaldocs/MK/1053/1_1053_3_17665.jpeg
+30811,איתמר,בן גביר,1056,https://fs.knesset.gov.il/globaldocs/MK/1056/1_1056_3_17788.jpeg
+30807,גלעד,קריב,1066,https://fs.knesset.gov.il/globaldocs/MK/1066/1_1066_3_17753.jpeg
+30814,אביגדור (אבי),מעוז,1063,https://fs.knesset.gov.il/globaldocs/MK/1063/1_1063_3_17738.jpeg
+30788,אביר,קארה,1065,https://fs.knesset.gov.il/globaldocs/MK/1065/1_1065_3_17768.jpeg
+30813,אבתיסאם,מראענה,1064,https://fs.knesset.gov.il/globaldocs/MK/1064/1_1064_3_17758.jpeg
+30808,אפרת,רייטן,1068,https://fs.knesset.gov.il/globaldocs/MK/1068/1_1068_3_17773.jpeg
+30810,מיכל מרים,וולדיגר,1060,https://fs.knesset.gov.il/globaldocs/MK/1060/1_1060_3_17793.jpeg
+30806,אמילי חיה,מואטי,1062,https://fs.knesset.gov.il/globaldocs/MK/1062/1_1062_3_17743.jpeg
+30812,שמחה,רוטמן,1067,https://fs.knesset.gov.il/globaldocs/MK/1067/1_1067_3_17818.jpeg
+30787,ניר,אורבך,1054,https://fs.knesset.gov.il/globaldocs/MK/1054/1_1054_3_17808.jpeg
+30805,ג'ידא,רינאוי-זועבי,1069,https://fs.knesset.gov.il/globaldocs/MK/1069/1_1069_3_17748.jpeg
+30809,גלית,דיסטל אטבריאן,1059,https://fs.knesset.gov.il/globaldocs/MK/1059/1_1059_3_17778.jpeg
+30781,נירה,שפק,1071,https://fs.knesset.gov.il/globaldocs/MK/1071/1_1071_3_17803.jpeg
+30780,רון,כץ,1061,https://fs.knesset.gov.il/globaldocs/MK/1061/1_1061_3_17813.jpeg
+30804,חיים,ביטון,1055,https://fs.knesset.gov.il/globaldocs/MK/1055/1_1055_3_17783.jpeg
+30786,עמיחי,שיקלי,1070,https://fs.knesset.gov.il/globaldocs/MK/1070/1_1070_3_17798.jpeg
+30803,מאזן,גנאים,1057,https://fs.knesset.gov.il/globaldocs/MK/1057/1_1057_3_17763.jpeg
+30818,גבי,לסקי,1081,https://fs.knesset.gov.il/globaldocs/MK/1081/1_1081_3_17968.jpeg
+30796,יוסף (יוסי),שיין,1080,https://fs.knesset.gov.il/globaldocs/MK/1080/1_1080_3_17958.jpeg
+30783,יסמין,פרידמן,1079,https://fs.knesset.gov.il/globaldocs/MK/1079/1_1079_3_17943.jpeg
+30817,אלון,טל,1073,https://fs.knesset.gov.il/globaldocs/MK/1073/1_1073_3_17938.jpeg
+30797,מאיר,יצחק הלוי,1074,https://fs.knesset.gov.il/globaldocs/MK/1074/1_1074_3_17953.jpeg
+30784,ענבר,בזק,1084,https://fs.knesset.gov.il/globaldocs/MK/1084/1_1084_3_18001.jpeg
+30782,טטיאנה (טניה),מזרסקי,1076,https://fs.knesset.gov.il/globaldocs/MK/1076/1_1076_3_17974.jpeg
+30106,נעמה,לזימי,1082,https://fs.knesset.gov.il/globaldocs/MK/1082/1_1082_3_17989.jpeg
+30816,מופיד,מרעי,1077,https://fs.knesset.gov.il/globaldocs/MK/1077/1_1077_3_17927.jpeg
+30789,שירלי,פינטו קדוש,1078,https://fs.knesset.gov.il/globaldocs/MK/1078/1_1078_3_17932.jpeg
+30820,סימון,דוידסון,1085,https://fs.knesset.gov.il/globaldocs/MK/1085/1_1085_3_18028.jpeg
+30821,עלי,סלאלחה,1086,https://fs.knesset.gov.il/globaldocs/MK/1086/1_1086_3_18081.jpeg
+30791,יום טוב חי,כלפון,1083,https://fs.knesset.gov.il/globaldocs/MK/1083/1_1083_3_17993.jpeg
+30745,לימור,מגן תלם,1075,https://fs.knesset.gov.il/globaldocs/MK/1075/1_1075_3_17948.jpeg
+30815,אלינה,בדרץ' יאלוב,1072,https://fs.knesset.gov.il/globaldocs/MK/1072/1_1072_3_17963.jpeg
+30823,שרון,רופא אופיר,1087,https://fs.knesset.gov.il/globaldocs/MK/1087/1_1087_3_18122.jpeg
+30799,מישל,בוסקילה,1088,https://fs.knesset.gov.il/globaldocs/MK/1088/1_1088_3_19591.jpeg
+30829,דבורה,ביטון,1094,https://fs.knesset.gov.il/globaldocs/MK/1094/1_1094_3_19657.jpeg
+30837,מטי צרפתי,הרכבי,1091,https://fs.knesset.gov.il/globaldocs/MK/1091/1_1091_3_19743.jpeg
+30833,טלי,גוטליב,1098,https://fs.knesset.gov.il/globaldocs/MK/1098/1_1098_3_19677.jpeg
+30857,אליהו,רביבו,1111,https://fs.knesset.gov.il/globaldocs/MK/1111/1_1111_3_19753.jpeg
+30844,חנוך,מלביצקי,1105,https://fs.knesset.gov.il/globaldocs/MK/1105/1_1105_3_19712.jpeg
+30853,משה,סעדה,1109,https://fs.knesset.gov.il/globaldocs/MK/1109/1_1109_3_19733.jpeg
+30836,שלום,דנינו,1101,https://fs.knesset.gov.il/globaldocs/MK/1101/1_1101_3_19687.jpeg
+30841,אלמוג,כהן,1104,https://fs.knesset.gov.il/globaldocs/MK/1104/1_1104_3_19707.jpeg
+30838,יצחק שמעון,וסרלאוף,1102,https://fs.knesset.gov.il/globaldocs/MK/1102/1_1102_3_19692.jpeg
+30851,משה,סולומון,1107,https://fs.knesset.gov.il/globaldocs/MK/1107/1_1107_3_19723.jpeg
+30834,יצחק,גולדקונפף,1099,https://fs.knesset.gov.il/globaldocs/MK/1099/1_1099_3_19749.jpeg
+30830,בועז,ביסמוט,1095,https://fs.knesset.gov.il/globaldocs/MK/1095/1_1095_3_19662.jpeg
+30852,לימור,סון הר-מלך,1108,https://fs.knesset.gov.il/globaldocs/MK/1108/1_1108_3_19728.jpeg
+30831,אברהם,בצלאל,1097,https://fs.knesset.gov.il/globaldocs/MK/1097/1_1097_3_19672.jpeg
+30849,שרון,ניר,1106,https://fs.knesset.gov.il/globaldocs/MK/1106/1_1106_3_19718.jpeg
+30827,עמיחי,אליהו,1096,https://fs.knesset.gov.il/globaldocs/MK/1096/1_1096_3_19667.jpeg
+30840,אוהד,טל,1090,https://fs.knesset.gov.il/globaldocs/MK/1090/1_1090_3_19702.jpeg
+30854,צביקה,פוגל,1110,https://fs.knesset.gov.il/globaldocs/MK/1110/1_1110_3_19738.jpeg
+30835,אליהו,דלל,1100,https://fs.knesset.gov.il/globaldocs/MK/1100/1_1100_3_19682.jpeg
+30859,נאור,שירי,1112,https://fs.knesset.gov.il/globaldocs/MK/1112/1_1112_3_19758.jpeg
+30826,וליד,אלהואשלה,1093,https://fs.knesset.gov.il/globaldocs/MK/1093/1_1093_3_19652.jpeg
+30839,יאסר,חוג'יראת,1103,https://fs.knesset.gov.il/globaldocs/MK/1103/1_1103_3_19697.jpeg
+30824,גדי,איזנקוט,1092,https://fs.knesset.gov.il/globaldocs/MK/1092/1_1092_3_19647.jpeg
+30856,יצחק,קרויזר,1114,https://fs.knesset.gov.il/globaldocs/MK/1114/1_1114_3_19866.jpeg
+30846,יונתן (יוני),מישרקי,1115,https://fs.knesset.gov.il/globaldocs/MK/1115/1_1115_3_19849.jpeg
+30858,משה,רוט,1117,https://fs.knesset.gov.il/globaldocs/MK/1117/1_1117_3_19896.jpeg
+30825,דן,אילוז,1116,https://fs.knesset.gov.il/globaldocs/MK/1116/1_1116_3_19861.jpeg
+30843,סימיון,מושיאשוילי,1120,https://fs.knesset.gov.il/globaldocs/MK/1120/1_1120_3_19940.jpeg
+30845,שלי,טל מירון,1118,https://fs.knesset.gov.il/globaldocs/MK/1118/1_1118_3_19926.jpeg
+30847,ארז,מלול,1119,https://fs.knesset.gov.il/globaldocs/MK/1119/1_1119_3_19933.jpeg
+30850,צבי,סוכות,1121,https://fs.knesset.gov.il/globaldocs/MK/1121/1_1121_3_19949.jpeg
+30860,אושר,שקלים,1123,https://fs.knesset.gov.il/globaldocs/MK/1123/1_1123_3_19975.jpeg
+30848,צגה,מלקו,1122,https://fs.knesset.gov.il/globaldocs/MK/1122/1_1122_3_19962.jpeg
+30828,אביחי,בוארון,1126,https://fs.knesset.gov.il/globaldocs/MK/1126/1_1126_3_20040.jpeg
+30832,ששון,גואטה,1125,https://fs.knesset.gov.il/globaldocs/MK/1125/1_1125_3_20029.jpeg

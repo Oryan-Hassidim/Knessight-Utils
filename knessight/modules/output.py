@@ -3,7 +3,7 @@
 import csv
 import json
 from pathlib import Path
-from typing import List, Dict
+from typing import List, Dict, Optional
 from statistics import mean
 from datetime import datetime
 
@@ -58,7 +58,12 @@ class OutputManager:
             with open(self.mks_csv_path, "r", newline="", encoding="utf-8-sig") as f:
                 reader = csv.DictReader(f)
                 for row in reader:
-                    id_value = (row.get("id") or row.get("knesset site id") or "").strip()
+                    normalized_row = {
+                        (key or "").strip().lower(): (value or "").strip()
+                        for key, value in row.items()
+                    }
+
+                    id_value = normalized_row.get("id", "")
                     if not id_value:
                         continue
 
@@ -67,13 +72,17 @@ class OutputManager:
                     except ValueError:
                         continue
 
-                    first_name = (row.get("first name") or "").strip()
-                    last_name = (row.get("last name") or "").strip()
+                    first_name = normalized_row.get("first name", "")
+                    last_name = normalized_row.get("last name", "")
                     csv_name = " ".join(part for part in [first_name, last_name] if part)
+
+                    knesset_site_id_value = normalized_row.get("knesset site id", "")
+                    knesset_site_id = self._safe_int(knesset_site_id_value)
 
                     metadata_by_id[person_id] = {
                         "name": csv_name,
-                        "image_url": (row.get("image url") or "").strip(),
+                        "image_url": normalized_row.get("image url", ""),
+                        "knesset_site_id": str(knesset_site_id or person_id),
                     }
 
         except Exception as e:
@@ -82,6 +91,13 @@ class OutputManager:
             )
 
         return metadata_by_id
+
+    @staticmethod
+    def _safe_int(value: str) -> Optional[int]:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return None
 
     def update_aggregations(
         self, person_id: int, topic: str, scored_speeches: List[Dict]
@@ -189,6 +205,17 @@ class OutputManager:
         if json_path.exists():
             with open(json_path, "r", encoding="utf-8") as f:
                 data = json.load(f)
+
+            csv_metadata = self._mks_metadata.get(person_id, {})
+            if csv_metadata:
+                if csv_metadata.get("name"):
+                    data["name"] = csv_metadata["name"]
+                if csv_metadata.get("image_url"):
+                    data["imageUrl"] = csv_metadata["image_url"]
+
+                csv_knesset_site_id = self._safe_int(csv_metadata.get("knesset_site_id"))
+                if csv_knesset_site_id is not None:
+                    data["knessetSiteId"] = csv_knesset_site_id
         else:
             # Get MK metadata from database
             metadata = self.database.get_person_metadata(person_id)
@@ -201,10 +228,11 @@ class OutputManager:
             csv_metadata = self._mks_metadata.get(person_id, {})
             name = csv_metadata.get("name") or metadata["name"]
             image_url = csv_metadata.get("image_url", "")
+            knesset_site_id = self._safe_int(csv_metadata.get("knesset_site_id")) or person_id
 
             data = {
                 "id": person_id,
-                "knessetSiteId": person_id,
+                "knessetSiteId": knesset_site_id,
                 "name": name,
                 "imageUrl": image_url,
                 "description": f"Faction: {metadata.get('faction', 'N/A')}, Party: {metadata.get('party_name', 'N/A')}",

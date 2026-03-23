@@ -1,5 +1,6 @@
 """MK name disambiguation with persistent caching."""
 
+import csv
 import json
 from pathlib import Path
 from typing import Dict, List, Optional
@@ -31,7 +32,47 @@ class Disambiguation:
         self.cache_path.parent.mkdir(parents=True, exist_ok=True)
 
         self._cache: Dict[str, int] = {}
+        self._mks_name_lookup: Dict[str, int] = self._load_mks_name_lookup()
         self._load_cache()
+
+    @staticmethod
+    def _normalize_name(name: str) -> str:
+        normalized = (name or "").strip()
+        for char in ["'", '"', "׳", "״"]:
+            normalized = normalized.replace(char, "")
+        return " ".join(normalized.split())
+
+    def _load_mks_name_lookup(self) -> Dict[str, int]:
+        """Load exact full-name -> person_id mapping from client_data/mks.csv."""
+        lookup: Dict[str, int] = {}
+        mks_csv_path = Path.cwd() / "data" / "client_data" / "mks.csv"
+
+        if not mks_csv_path.exists():
+            return lookup
+
+        try:
+            with open(mks_csv_path, "r", encoding="utf-8-sig", newline="") as f:
+                reader = csv.DictReader(f)
+                for row in reader:
+                    first_name = self._normalize_name(row.get("first name", ""))
+                    last_name = self._normalize_name(row.get("last name", ""))
+                    full_name = self._normalize_name(f"{first_name} {last_name}".strip())
+                    person_id_raw = (row.get("id") or "").strip()
+
+                    if not full_name or not person_id_raw:
+                        continue
+
+                    try:
+                        person_id = int(person_id_raw)
+                    except ValueError:
+                        continue
+
+                    lookup[full_name] = person_id
+
+        except Exception:
+            return lookup
+
+        return lookup
 
     def _load_cache(self):
         """Load resolution cache from disk."""
@@ -86,6 +127,16 @@ class Disambiguation:
         Returns:
             person_id if resolved, None otherwise
         """
+        normalized_input = self._normalize_name(name)
+
+        # Exact match from mks.csv (preferred deterministic source)
+        if normalized_input in self._mks_name_lookup:
+            person_id = self._mks_name_lookup[normalized_input]
+            self.console.print(
+                f"[green]✓[/green] {name} → person_id {person_id} (mks.csv exact match)"
+            )
+            return person_id
+
         # Search database
         candidates = self.database.search_people_by_name(name)
 
